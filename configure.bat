@@ -26,8 +26,8 @@
 @rem ################################
 
 @rem # Requirement arguments passed to pip and used by default or with --dev.
-set "REQUIREMENTS=--editable . --constraint requirements.txt"
-set "DEV_REQUIREMENTS=--editable .[testing] --constraint requirements.txt --constraint requirements-dev.txt"
+set "REQUIREMENTS=--editable plugins/source_inspector_ctags-linux --editable . --constraint requirements.txt"
+set "DEV_REQUIREMENTS=--editable plugins/source_inspector_ctags-linux --editable .[testing] --constraint requirements.txt --constraint requirements-dev.txt"
 set "DOCS_REQUIREMENTS=--editable .[docs] --constraint requirements.txt"
 
 @rem # where we create a virtualenv

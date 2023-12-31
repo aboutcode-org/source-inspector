@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "test3.cpp",
+      "type": "file",
+      "symbols": [
+        "addr2line_obj_dump",
+        "readmaps",
+        "stacktrace_close",
+        "stacktrace_dump",
+        "stacktrace_get",
+        "string_copy",
+        "string_free",
+        "string_length"
+      ],
+      "scan_errors": []
+    }
+  ]
+}
