@@ -4,264 +4,2096 @@
       "path": "if_ath.c",
       "type": "file",
       "symbols": [
-        "ATH_SYSCTL_DECL",
-        "ar_device",
-        "ath_alloc_skb",
-        "ath_announce",
-        "ath_announce",
-        "ath_attach",
-        "ath_beacon_alloc",
-        "ath_beacon_alloc",
-        "ath_beacon_config",
-        "ath_beacon_config",
-        "ath_beacon_dturbo_config",
-        "ath_beacon_dturbo_config",
-        "ath_beacon_dturbo_update",
-        "ath_beacon_dturbo_update",
-        "ath_beacon_free",
-        "ath_beacon_free",
-        "ath_beacon_generate",
-        "ath_beacon_return",
-        "ath_beacon_return",
-        "ath_beacon_send",
-        "ath_beacon_send",
-        "ath_beacon_setup",
-        "ath_beacon_start_adhoc",
-        "ath_beacon_start_adhoc",
-        "ath_beaconq_config",
-        "ath_beaconq_setup",
-        "ath_beaconq_setup",
-        "ath_bmiss_tasklet",
-        "ath_bmiss_tasklet",
-        "ath_bstuck_tasklet",
-        "ath_bstuck_tasklet",
-        "ath_calcrxfilter",
-        "ath_calibrate",
-        "ath_calibrate",
-        "ath_chan2flags",
-        "ath_chan_change",
-        "ath_chan_change",
-        "ath_chan_set",
-        "ath_chan_set",
-        "ath_change_mtu",
-        "ath_change_mtu",
-        "ath_check_beacon_done",
-        "ath_check_beacon_done",
-        "ath_check_dfs_clear",
-        "ath_check_dfs_clear",
-        "ath_comp_set",
-        "ath_comp_set",
-        "ath_desc_alloc",
-        "ath_desc_alloc",
-        "ath_desc_free",
-        "ath_desc_free",
-        "ath_desc_swap",
-        "ath_desc_swap",
-        "ath_descdma_cleanup",
-        "ath_descdma_cleanup",
-        "ath_descdma_setup",
-        "ath_descdma_setup",
-        "ath_detach",
-        "ath_dfs_test_return",
-        "ath_dfs_test_return",
-        "ath_draintxq",
-        "ath_draintxq",
-        "ath_dynamic_sysctl_register",
-        "ath_dynamic_sysctl_register",
-        "ath_dynamic_sysctl_unregister",
-        "ath_dynamic_sysctl_unregister",
-        "ath_extend_tsf",
-        "ath_fatal_tasklet",
-        "ath_fatal_tasklet",
-        "ath_ff_ageflushtestdone",
-        "ath_ff_neverflushtestdone",
-        "ath_ffstageq_flush",
-        "ath_flushrecv",
-        "ath_flushrecv",
-        "ath_get_hal_status_desc",
-        "ath_get_hal_status_desc",
-        "ath_get_icvlen",
-        "ath_get_icvlen",
-        "ath_get_ivlen",
-        "ath_get_ivlen",
-        "ath_getchannels",
-        "ath_getchannels",
-        "ath_getstats",
-        "ath_getstats",
-        "ath_grppoll_period_update",
-        "ath_grppoll_period_update",
-        "ath_grppoll_start",
-        "ath_grppoll_start",
-        "ath_grppoll_stop",
-        "ath_grppoll_stop",
-        "ath_grppoll_txq_setup",
-        "ath_grppoll_txq_setup",
-        "ath_grppoll_txq_update",
-        "ath_grppoll_txq_update",
-        "ath_hardstart",
-        "ath_hardstart",
-        "ath_init",
-        "ath_init",
-        "ath_intr",
-        "ath_ioctl",
-        "ath_ioctl",
-        "ath_ioctl_diag",
-        "ath_key_alloc",
-        "ath_key_alloc",
-        "ath_key_delete",
-        "ath_key_delete",
-        "ath_key_set",
-        "ath_key_set",
-        "ath_key_update_begin",
-        "ath_key_update_begin",
-        "ath_key_update_end",
-        "ath_key_update_end",
-        "ath_keyprint",
-        "ath_keyset",
-        "ath_keyset_tkip",
-        "ath_led_blink",
-        "ath_led_done",
-        "ath_led_event",
-        "ath_led_event",
-        "ath_led_off",
-        "ath_merge_mcast",
-        "ath_mgtstart",
-        "ath_mgtstart",
-        "ath_mhz2ieee",
-        "ath_mhz2ieee",
-        "ath_mode_init",
-        "ath_mode_init",
-        "ath_newassoc",
-        "ath_newassoc",
-        "ath_newstate",
-        "ath_newstate",
-        "ath_node_alloc",
-        "ath_node_alloc",
-        "ath_node_cleanup",
-        "ath_node_cleanup",
-        "ath_node_free",
-        "ath_node_free",
-        "ath_node_getrssi",
-        "ath_node_getrssi",
-        "ath_node_move_data",
-        "ath_node_move_data",
-        "ath_printrxbuf",
-        "ath_printrxbuf",
-        "ath_printtxbuf",
-        "ath_printtxbuf",
-        "ath_radar_task",
-        "ath_radar_task",
-        "ath_rate_setup",
-        "ath_rate_setup",
-        "ath_rcv_dev_event",
-        "ath_rcv_dev_event",
-        "ath_recv_mgmt",
-        "ath_recv_mgmt",
-        "ath_reset",
-        "ath_reset",
-        "ath_resume",
-        "ath_rx_capture",
-        "ath_rx_tasklet",
-        "ath_rx_tasklet",
-        "ath_rxbuf_init",
-        "ath_rxbuf_init",
-        "ath_rxorn_tasklet",
-        "ath_rxorn_tasklet",
-        "ath_scan_end",
-        "ath_scan_end",
-        "ath_scan_start",
-        "ath_scan_start",
-        "ath_set_ack_bitrate",
-        "ath_set_ack_bitrate",
-        "ath_set_channel",
-        "ath_set_channel",
-        "ath_set_coverageclass",
-        "ath_set_coverageclass",
-        "ath_set_mac_address",
-        "ath_set_mac_address",
-        "ath_setcurmode",
-        "ath_setcurmode",
-        "ath_setdefantenna",
-        "ath_setdefantenna",
-        "ath_setslottime",
-        "ath_setslottime",
-        "ath_setup_comp",
-        "ath_setup_comp",
-        "ath_setup_keycacheslot",
-        "ath_setup_keycacheslot",
-        "ath_setup_stationkey",
-        "ath_setup_stationkey",
-        "ath_setup_stationwepkey",
-        "ath_setup_stationwepkey",
-        "ath_setup_subrates",
-        "ath_setup_subrates",
-        "ath_startrecv",
-        "ath_startrecv",
-        "ath_stop",
-        "ath_stop",
-        "ath_stop_locked",
-        "ath_stop_locked",
-        "ath_stoprecv",
-        "ath_stoprecv",
-        "ath_suspend",
-        "ath_sysctl_register",
-        "ath_sysctl_unregister",
-        "ath_turbo_switch_mode",
-        "ath_turbo_switch_mode",
-        "ath_tx_capture",
-        "ath_tx_cleanup",
-        "ath_tx_cleanup",
-        "ath_tx_cleanupq",
-        "ath_tx_cleanupq",
-        "ath_tx_draintxq",
-        "ath_tx_draintxq",
-        "ath_tx_findindex",
-        "ath_tx_processq",
-        "ath_tx_setup",
-        "ath_tx_setup",
-        "ath_tx_start",
-        "ath_tx_start",
-        "ath_tx_startraw",
-        "ath_tx_stopdma",
-        "ath_tx_tasklet",
-        "ath_tx_tasklet",
-        "ath_tx_tasklet_q0",
-        "ath_tx_tasklet_q0",
-        "ath_tx_tasklet_q0123",
-        "ath_tx_tasklet_q0123",
-        "ath_tx_timeout",
-        "ath_tx_timeout",
-        "ath_tx_txqaddbuf",
-        "ath_tx_txqaddbuf",
-        "ath_tx_uapsdqueue",
-        "ath_tx_uapsdqueue",
-        "ath_txq_setup",
-        "ath_txq_setup",
-        "ath_txq_update",
-        "ath_uapsd_flush",
-        "ath_uapsd_flush",
-        "ath_uapsd_processtriggers",
-        "ath_update_txpow",
-        "ath_update_txpow",
-        "ath_updateslot",
-        "ath_updateslot",
-        "ath_vap_create",
-        "ath_vap_create",
-        "ath_vap_delete",
-        "ath_vap_delete",
-        "ath_wme_update",
-        "ath_wme_update",
-        "ath_xr_rate_setup",
-        "ath_xr_rate_setup",
-        "athff_approx_txtime",
-        "athff_can_aggregate",
-        "athff_can_aggregate",
-        "dot11_to_ratecode",
-        "key_alloc_2pair",
-        "key_alloc_pair",
-        "key_alloc_single",
-        "set_node_txpower",
-        "txqactive"
+        {
+          "_type": "tag",
+          "name": "AR5K_AR5212_STA_ID1",
+          "pattern": "/^#define AR5K_AR5212_STA_ID1 /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "AR5K_AR5212_STA_ID1_ACKCTS_6MB",
+          "pattern": "/^#define AR5K_AR5212_STA_ID1_ACKCTS_6MB /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "AR5K_AR5212_STA_ID1_BASE_RATE_11B",
+          "pattern": "/^#define AR5K_AR5212_STA_ID1_BASE_RATE_11B /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "AR_DEBUG",
+          "pattern": "/^#define\tAR_DEBUG$/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_ACKRATE",
+          "pattern": "/^\tATH_ACKRATE\t\t= 22,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_ACKTIMEOUT",
+          "pattern": "/^\tATH_ACKTIMEOUT\t\t= 2,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_COUNTRYCODE",
+          "pattern": "/^\tATH_COUNTRYCODE\t\t= 6,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_CTSTIMEOUT",
+          "pattern": "/^\tATH_CTSTIMEOUT\t\t= 3,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG",
+          "pattern": "/^\tATH_DEBUG\t\t= 8,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_ANY",
+          "pattern": "/^\tATH_DEBUG_ANY\t\t= 0xffffffff$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_BEACON",
+          "pattern": "/^\tATH_DEBUG_BEACON \t= 0x00000080,\t\\/* beacon handling *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_BEACON_PROC",
+          "pattern": "/^\tATH_DEBUG_BEACON_PROC\t= 0x00008000,\t\\/* beacon ISR proc *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_CALIBRATE",
+          "pattern": "/^\tATH_DEBUG_CALIBRATE\t= 0x00010000,\t\\/* periodic calibration *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_DOTH",
+          "pattern": "/^\tATH_DEBUG_DOTH\t\t= 0x01000000,\t\\/* 11.h *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_FATAL",
+          "pattern": "/^\tATH_DEBUG_FATAL\t\t= 0x80000000,\t\\/* fatal errors *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_FF",
+          "pattern": "/^\tATH_DEBUG_FF\t\t= 0x00200000,\t\\/* fast frames *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_INTR",
+          "pattern": "/^\tATH_DEBUG_INTR\t\t= 0x00001000,\t\\/* ISR *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_KEYCACHE",
+          "pattern": "/^\tATH_DEBUG_KEYCACHE\t= 0x00020000,\t\\/* key cache management *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_LED",
+          "pattern": "/^\tATH_DEBUG_LED\t\t= 0x00100000,\t\\/* led management *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_NODE",
+          "pattern": "/^\tATH_DEBUG_NODE\t\t= 0x00080000,\t\\/* node management *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_RATE",
+          "pattern": "/^\tATH_DEBUG_RATE\t\t= 0x00000010,\t\\/* rate control *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_RECV",
+          "pattern": "/^\tATH_DEBUG_RECV\t\t= 0x00000004,\t\\/* basic recv operation *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_RECV_DESC",
+          "pattern": "/^\tATH_DEBUG_RECV_DESC\t= 0x00000008,\t\\/* recv descriptors *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_RESET",
+          "pattern": "/^\tATH_DEBUG_RESET\t\t= 0x00000020,\t\\/* reset processing *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_RX_PROC",
+          "pattern": "/^\tATH_DEBUG_RX_PROC\t= 0x00004000,\t\\/* rx ISR proc *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_STATE",
+          "pattern": "/^\tATH_DEBUG_STATE\t\t= 0x00040000,\t\\/* 802.11 state transitions *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_TURBO",
+          "pattern": "/^\tATH_DEBUG_TURBO\t\t= 0x00400000,\t\\/* turbo\\/dynamic turbo *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_TX_PROC",
+          "pattern": "/^\tATH_DEBUG_TX_PROC\t= 0x00002000,\t\\/* tx ISR proc *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_UAPSD",
+          "pattern": "/^\tATH_DEBUG_UAPSD\t\t= 0x00800000,\t\\/* uapsd *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_WATCHDOG",
+          "pattern": "/^\tATH_DEBUG_WATCHDOG \t= 0x00000100,\t\\/* watchdog timeout *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_XMIT",
+          "pattern": "/^\tATH_DEBUG_XMIT\t\t= 0x00000001,\t\\/* basic xmit operation *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DEBUG_XMIT_DESC",
+          "pattern": "/^\tATH_DEBUG_XMIT_DESC\t= 0x00000002,\t\\/* xmit descriptors *\\/$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390203",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_DIVERSITY",
+          "pattern": "/^\tATH_DIVERSITY\t\t= 11,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_EXPONENT_TO_VALUE",
+          "pattern": "/^#define\tATH_EXPONENT_TO_VALUE(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_FFTXQMIN",
+          "pattern": "/^\tATH_FFTXQMIN\t\t= 18,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_GET_VAP_ID",
+          "pattern": "/^#define ATH_GET_VAP_ID(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_HARDSTART_GET_TX_BUF_WITH_LOCK",
+          "pattern": "/^#define ATH_HARDSTART_GET_TX_BUF_WITH_LOCK\t/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_INTMIT",
+          "pattern": "/^\tATH_INTMIT\t\t= 23,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_LEDPIN",
+          "pattern": "/^\tATH_LEDPIN\t\t= 5,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_LED_POLL",
+          "pattern": "/^\tATH_LED_POLL,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390103",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_LED_RX",
+          "pattern": "/^\tATH_LED_RX,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390103",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_LED_TX",
+          "pattern": "/^\tATH_LED_TX,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390103",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_MAXVAPS",
+          "pattern": "/^\tATH_MAXVAPS\t\t= 26,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_REGDOMAIN",
+          "pattern": "/^\tATH_REGDOMAIN\t\t= 7,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_RXANTENNA",
+          "pattern": "/^\tATH_RXANTENNA\t\t= 10,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_SETUP_XR_VAP",
+          "pattern": "/^#define ATH_SETUP_XR_VAP(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_SET_VAP_BSSID",
+          "pattern": "/^#define ATH_SET_VAP_BSSID(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_SET_VAP_BSSID_MASK",
+          "pattern": "/^#define ATH_SET_VAP_BSSID_MASK(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_SLOTTIME",
+          "pattern": "/^\tATH_SLOTTIME\t\t= 1,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_SOFTLED",
+          "pattern": "/^\tATH_SOFTLED\t\t= 4,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_SYSCTL_DECL",
+          "pattern": "/^ATH_SYSCTL_DECL(ath_sysctl_halparam, ctl, write, filp, buffer, lenp, ppos)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_TKIPMIC",
+          "pattern": "/^\tATH_TKIPMIC\t\t= 19,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_TXANTENNA",
+          "pattern": "/^\tATH_TXANTENNA\t\t= 9,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_TXINTRPERIOD",
+          "pattern": "/^\tATH_TXINTRPERIOD \t= 12,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_TXOP_TO_US",
+          "pattern": "/^#define\tATH_TXOP_TO_US(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_XR_POLL_COUNT",
+          "pattern": "/^\tATH_XR_POLL_COUNT \t= 21,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ATH_XR_POLL_PERIOD",
+          "pattern": "/^\tATH_XR_POLL_PERIOD \t= 20,$/",
+          "file": true,
+          "kind": "enumerator",
+          "scope": "__anon30d3f0390403",
+          "scopeKind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "DEF_RATE_CTL",
+          "pattern": "/^#define DEF_RATE_CTL /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "DPRINTF",
+          "pattern": "/^#define\tDPRINTF(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "DS2PHYS",
+          "pattern": "/^#define\tDS2PHYS(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "FUDGE",
+          "pattern": "/^#define\tFUDGE\t/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "HAL_EP_RND",
+          "pattern": "/^#define\tHAL_EP_RND(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "HAL_MODE_DUALBAND",
+          "pattern": "/^#define\tHAL_MODE_DUALBAND\t/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "IEEE80211_KEY_XR",
+          "pattern": "/^#define\tIEEE80211_KEY_XR\t/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "IFF_DUMPPKTS",
+          "pattern": "/^#define\tIFF_DUMPPKTS(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "IS_CAPABLE",
+          "pattern": "/^#define\tIS_CAPABLE(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "KEYPRINTF",
+          "pattern": "/^#define\tKEYPRINTF(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "LE_READ_2",
+          "pattern": "/^#define LE_READ_2(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "LE_READ_4",
+          "pattern": "/^#define LE_READ_4(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "MAX_GRPPOLL_RATE",
+          "pattern": "/^#define MAX_GRPPOLL_RATE /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "MIN",
+          "pattern": "/^#define\tMIN(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "N",
+          "pattern": "/^#define\tN(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "PA2DESC",
+          "pattern": "/^#define\tPA2DESC(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "RATE_TO_STR_MAP",
+          "pattern": "/^\t} RATE_TO_STR_MAP;$/",
+          "file": true,
+          "typeref": "struct:ath_grppoll_start::rate_to_str_map",
+          "kind": "typedef",
+          "scope": "ath_grppoll_start",
+          "scopeKind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "RX_FILTER_PRESERVE",
+          "pattern": "/^#define\tRX_FILTER_PRESERVE\t/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "TSF_TO_TU",
+          "pattern": "/^#define\tTSF_TO_TU(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "USE_SHPREAMBLE",
+          "pattern": "/^#define\tUSE_SHPREAMBLE(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "US_PER_4MS",
+          "pattern": "/^#define US_PER_4MS /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "__anon30d3f0390103",
+          "pattern": "/^enum {$/",
+          "file": true,
+          "kind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "__anon30d3f0390203",
+          "pattern": "/^enum {$/",
+          "file": true,
+          "kind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "__anon30d3f0390308",
+          "pattern": "/^\tstatic const struct {$/",
+          "file": true,
+          "kind": "struct",
+          "scope": "ath_setcurmode",
+          "scopeKind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "__anon30d3f0390403",
+          "pattern": "/^enum {$/",
+          "file": true,
+          "kind": "enum"
+        },
+        {
+          "_type": "tag",
+          "name": "ar_device",
+          "pattern": "/^ar_device(int devid)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_alloc_skb",
+          "pattern": "/^ath_alloc_skb(u_int size, u_int align)$/",
+          "file": true,
+          "typeref": "struct:sk_buff *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_announce",
+          "pattern": "/^ath_announce(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_ath_table",
+          "pattern": "/^static ctl_table ath_ath_table[] = {$/",
+          "file": true,
+          "typeref": "typename:ctl_table[]",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_attach",
+          "pattern": "/^ath_attach(u_int16_t devid, struct net_device *dev, HAL_BUS_TAG tag)$/",
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_alloc",
+          "pattern": "/^ath_beacon_alloc(struct ath_softc *sc, struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_config",
+          "pattern": "/^ath_beacon_config(struct ath_softc *sc, struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_dturbo_config",
+          "pattern": "/^ath_beacon_dturbo_config(struct ieee80211vap *vap, u_int32_t intval)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_dturbo_update",
+          "pattern": "/^ath_beacon_dturbo_update(struct ieee80211vap *vap, int *needmark,u_int8_t dtim)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_free",
+          "pattern": "/^ath_beacon_free(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_generate",
+          "pattern": "/^ath_beacon_generate(struct ath_softc *sc, struct ieee80211vap *vap, int *needmark)$/",
+          "file": true,
+          "typeref": "struct:ath_buf *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_return",
+          "pattern": "/^ath_beacon_return(struct ath_softc *sc, struct ath_buf *bf)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_send",
+          "pattern": "/^ath_beacon_send(struct ath_softc *sc, int *needmark)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_setup",
+          "pattern": "/^ath_beacon_setup(struct ath_softc *sc, struct ath_buf *bf)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beacon_start_adhoc",
+          "pattern": "/^ath_beacon_start_adhoc(struct ath_softc *sc, struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beaconq_config",
+          "pattern": "/^ath_beaconq_config(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_beaconq_setup",
+          "pattern": "/^ath_beaconq_setup(struct ath_hal *ah)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_bmiss_tasklet",
+          "pattern": "/^ath_bmiss_tasklet(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_bstuck_tasklet",
+          "pattern": "/^ath_bstuck_tasklet(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_calcrxfilter",
+          "pattern": "/^ath_calcrxfilter(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:u_int32_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_calibrate",
+          "pattern": "/^ath_calibrate(unsigned long arg)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_calinterval",
+          "pattern": "/^static int ath_calinterval = ATH_SHORT_CALINTERVAL;\t\t\\/*$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_chan2flags",
+          "pattern": "/^ath_chan2flags(struct ieee80211_channel *chan)$/",
+          "file": true,
+          "typeref": "typename:u_int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_chan_change",
+          "pattern": "/^ath_chan_change(struct ath_softc *sc, struct ieee80211_channel *chan)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_chan_set",
+          "pattern": "/^ath_chan_set(struct ath_softc *sc, struct ieee80211_channel *chan)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_change_mtu",
+          "pattern": "/^ath_change_mtu(struct net_device *dev, int mtu)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_check_beacon_done",
+          "pattern": "/^ath_check_beacon_done(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_check_dfs_clear",
+          "pattern": "/^ath_check_dfs_clear(unsigned long data ) $/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_comp_set",
+          "pattern": "/^ath_comp_set(struct ieee80211vap *vap, struct ieee80211_node *ni, int en)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_countrycode",
+          "pattern": "/^static int ath_countrycode = CTRY_DEFAULT;\t\\/* country code *\\/$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_debug",
+          "pattern": "/^static int\tath_debug = 0;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_desc_alloc",
+          "pattern": "/^ath_desc_alloc(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_desc_free",
+          "pattern": "/^ath_desc_free(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_desc_swap",
+          "pattern": "/^ath_desc_swap(struct ath_desc *ds)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_descdma_cleanup",
+          "pattern": "/^ath_descdma_cleanup(struct ath_softc *sc,$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_descdma_setup",
+          "pattern": "/^ath_descdma_setup(struct ath_softc *sc,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_detach",
+          "pattern": "/^ath_detach(struct net_device *dev)$/",
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_dfs_test_return",
+          "pattern": "/^ath_dfs_test_return(unsigned long data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_draintxq",
+          "pattern": "/^ath_draintxq(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_dynamic_sysctl_register",
+          "pattern": "/^ath_dynamic_sysctl_register(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_dynamic_sysctl_unregister",
+          "pattern": "/^ath_dynamic_sysctl_unregister(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_event_block",
+          "pattern": "/^static struct notifier_block ath_event_block = {$/",
+          "file": true,
+          "typeref": "struct:notifier_block",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_extend_tsf",
+          "pattern": "/^ath_extend_tsf(struct ath_hal *ah, u_int32_t rstamp)$/",
+          "file": true,
+          "typeref": "typename:u_int64_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_fatal_tasklet",
+          "pattern": "/^ath_fatal_tasklet(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_ff_ageflushtestdone",
+          "pattern": "/^ath_ff_ageflushtestdone(struct ath_txq *txq, struct ath_buf *bf)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_ff_neverflushtestdone",
+          "pattern": "/^ath_ff_neverflushtestdone(struct ath_txq *txq, struct ath_buf *bf)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_ffstageq_flush",
+          "pattern": "/^ath_ffstageq_flush(struct ath_softc *sc, struct ath_txq *txq,$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_flushrecv",
+          "pattern": "/^ath_flushrecv(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_get_hal_status_desc",
+          "pattern": "/^ath_get_hal_status_desc(HAL_STATUS status)$/",
+          "file": true,
+          "typeref": "typename:const char *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_get_icvlen",
+          "pattern": "/^ath_get_icvlen(struct ieee80211_key *k)$/",
+          "file": true,
+          "typeref": "typename:u_int32_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_get_ivlen",
+          "pattern": "/^ath_get_ivlen(struct ieee80211_key *k)$/",
+          "file": true,
+          "typeref": "typename:u_int32_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_getchannels",
+          "pattern": "/^ath_getchannels(struct net_device *dev, u_int cc,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_getstats",
+          "pattern": "/^ath_getstats(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "struct:net_device_stats *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_grppoll_period_update",
+          "pattern": "/^ath_grppoll_period_update(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_grppoll_start",
+          "pattern": "/^static void ath_grppoll_start(struct ieee80211vap *vap,int pollcount)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_grppoll_stop",
+          "pattern": "/^static void ath_grppoll_stop(struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_grppoll_txq_setup",
+          "pattern": "/^ath_grppoll_txq_setup(struct ath_softc *sc, int qtype, int period)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_grppoll_txq_update",
+          "pattern": "/^ath_grppoll_txq_update(struct ath_softc *sc, int period)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_hardstart",
+          "pattern": "/^ath_hardstart(struct sk_buff *skb, struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_init",
+          "pattern": "/^ath_init(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_intr",
+          "pattern": "/^ath_intr(int irq, void *dev_id)$/",
+          "typeref": "typename:irqreturn_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_ioctl",
+          "pattern": "/^ath_ioctl(struct net_device *dev, struct ifreq *ifr, int cmd)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_ioctl_diag",
+          "pattern": "/^ath_ioctl_diag(struct ath_softc *sc, struct ath_diag *ad)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_key_alloc",
+          "pattern": "/^ath_key_alloc(struct ieee80211vap *vap, const struct ieee80211_key *k)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_key_delete",
+          "pattern": "/^ath_key_delete(struct ieee80211vap *vap, const struct ieee80211_key *k,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_key_set",
+          "pattern": "/^ath_key_set(struct ieee80211vap *vap, const struct ieee80211_key *k,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_key_update_begin",
+          "pattern": "/^ath_key_update_begin(struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_key_update_end",
+          "pattern": "/^ath_key_update_end(struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_keyprint",
+          "pattern": "/^ath_keyprint(struct ath_softc *sc, const char *tag, u_int ix,$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_keyset",
+          "pattern": "/^ath_keyset(struct ath_softc *sc, const struct ieee80211_key *k,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_keyset_tkip",
+          "pattern": "/^ath_keyset_tkip(struct ath_softc *sc, const struct ieee80211_key *k,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_led_blink",
+          "pattern": "/^ath_led_blink(struct ath_softc *sc, int on, int off)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_led_done",
+          "pattern": "/^ath_led_done(unsigned long arg)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_led_event",
+          "pattern": "/^ath_led_event(struct ath_softc *sc, int event)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_led_off",
+          "pattern": "/^ath_led_off(unsigned long arg)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_maxvaps",
+          "pattern": "/^static int ath_maxvaps = ATH_MAXVAPS_DEFAULT;\t\\/* set default maximum vaps *\\/$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_merge_mcast",
+          "pattern": "/^ath_merge_mcast(struct ath_softc *sc, u_int32_t mfilt[2])$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_mgtstart",
+          "pattern": "/^ath_mgtstart(struct ieee80211com *ic, struct sk_buff *skb)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_mhz2ieee",
+          "pattern": "/^ath_mhz2ieee(struct ieee80211com *ic, u_int freq, u_int flags)$/",
+          "file": true,
+          "typeref": "typename:u_int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_mode_init",
+          "pattern": "/^ath_mode_init(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_newassoc",
+          "pattern": "/^ath_newassoc(struct ieee80211_node *ni, int isnew)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_newstate",
+          "pattern": "/^ath_newstate(struct ieee80211vap *vap, enum ieee80211_state nstate, int arg)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_node_alloc",
+          "pattern": "/^ath_node_alloc(struct ieee80211_node_table *nt,struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "struct:ieee80211_node *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_node_cleanup",
+          "pattern": "/^ath_node_cleanup(struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_node_free",
+          "pattern": "/^ath_node_free(struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_node_getrssi",
+          "pattern": "/^ath_node_getrssi(const struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:u_int8_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_node_move_data",
+          "pattern": "/^ath_node_move_data(const struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:u_int8_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_outdoor",
+          "pattern": "/^static int ath_outdoor = AH_FALSE;\t\t\\/* enable outdoor use *\\/$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_printrxbuf",
+          "pattern": "/^ath_printrxbuf(struct ath_buf *bf, int done)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_printtxbuf",
+          "pattern": "/^ath_printtxbuf(struct ath_buf *bf, int done)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_radar_task",
+          "pattern": "/^ath_radar_task(struct work_struct *thr)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_rate_setup",
+          "pattern": "/^ath_rate_setup(struct net_device *dev, u_int mode)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_rcv_dev_event",
+          "pattern": "/^ath_rcv_dev_event(struct notifier_block *this, unsigned long event,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_recv_mgmt",
+          "pattern": "/^ath_recv_mgmt(struct ieee80211_node *ni, struct sk_buff *skb,$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_reset",
+          "pattern": "/^ath_reset(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_resume",
+          "pattern": "/^ath_resume(struct net_device *dev)$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_root_table",
+          "pattern": "/^static ctl_table ath_root_table[] = {$/",
+          "file": true,
+          "typeref": "typename:ctl_table[]",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_rx_capture",
+          "pattern": "/^ath_rx_capture(struct net_device *dev, struct ath_desc *ds, struct sk_buff *skb)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_rx_tasklet",
+          "pattern": "/^ath_rx_tasklet(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_rxbuf_init",
+          "pattern": "/^ath_rxbuf_init(struct ath_softc *sc, struct ath_buf *bf)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_rxorn_tasklet",
+          "pattern": "/^ath_rxorn_tasklet(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_scan_end",
+          "pattern": "/^ath_scan_end(struct ieee80211com *ic)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_scan_start",
+          "pattern": "/^ath_scan_start(struct ieee80211com *ic)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_set_ack_bitrate",
+          "pattern": "/^ath_set_ack_bitrate(struct ath_softc *sc, int high) $/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_set_channel",
+          "pattern": "/^ath_set_channel(struct ieee80211com *ic)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_set_coverageclass",
+          "pattern": "/^ath_set_coverageclass(struct ieee80211com *ic) $/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_set_mac_address",
+          "pattern": "/^ath_set_mac_address(struct net_device *dev, void *addr)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setcurmode",
+          "pattern": "/^ath_setcurmode(struct ath_softc *sc, enum ieee80211_phymode mode)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setdefantenna",
+          "pattern": "/^ath_setdefantenna(struct ath_softc *sc, u_int antenna)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setslottime",
+          "pattern": "/^ath_setslottime(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setup_comp",
+          "pattern": "/^ath_setup_comp(struct ieee80211_node *ni, int enable)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setup_keycacheslot",
+          "pattern": "/^ath_setup_keycacheslot(struct ath_softc *sc, struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setup_stationkey",
+          "pattern": "/^ath_setup_stationkey(struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setup_stationwepkey",
+          "pattern": "/^ath_setup_stationwepkey(struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_setup_subrates",
+          "pattern": "/^ath_setup_subrates(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_startrecv",
+          "pattern": "/^ath_startrecv(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_static_sysctls",
+          "pattern": "/^static ctl_table ath_static_sysctls[] = {$/",
+          "file": true,
+          "typeref": "typename:ctl_table[]",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_stop",
+          "pattern": "/^ath_stop(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_stop_locked",
+          "pattern": "/^ath_stop_locked(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_stoprecv",
+          "pattern": "/^ath_stoprecv(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_suspend",
+          "pattern": "/^ath_suspend(struct net_device *dev)$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_sysctl_header",
+          "pattern": "/^static struct ctl_table_header *ath_sysctl_header;$/",
+          "file": true,
+          "typeref": "struct:ctl_table_header *",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_sysctl_register",
+          "pattern": "/^ath_sysctl_register(void)$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_sysctl_template",
+          "pattern": "/^static const ctl_table ath_sysctl_template[] = {$/",
+          "file": true,
+          "typeref": "typename:const ctl_table[]",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_sysctl_unregister",
+          "pattern": "/^ath_sysctl_unregister(void)$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_turbo_switch_mode",
+          "pattern": "/^ath_turbo_switch_mode(unsigned long data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_capture",
+          "pattern": "/^ath_tx_capture(struct net_device *dev, struct ath_desc *ds, struct sk_buff *skb)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_cleanup",
+          "pattern": "/^ath_tx_cleanup(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_cleanupq",
+          "pattern": "/^ath_tx_cleanupq(struct ath_softc *sc, struct ath_txq *txq)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_draintxq",
+          "pattern": "/^ath_tx_draintxq(struct ath_softc *sc, struct ath_txq *txq)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_findindex",
+          "pattern": "/^ath_tx_findindex(const HAL_RATE_TABLE *rt, int rate)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_processq",
+          "pattern": "/^ath_tx_processq(struct ath_softc *sc, struct ath_txq *txq)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_setup",
+          "pattern": "/^ath_tx_setup(struct ath_softc *sc, int ac, int haltype)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_start",
+          "pattern": "/^ath_tx_start(struct net_device *dev, struct ieee80211_node *ni, struct ath_buf *bf, struct sk_bu/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_startraw",
+          "pattern": "/^ath_tx_startraw(struct net_device *dev, struct ath_buf *bf, struct sk_buff *skb) $/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_stopdma",
+          "pattern": "/^ath_tx_stopdma(struct ath_softc *sc, struct ath_txq *txq)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_tasklet",
+          "pattern": "/^ath_tx_tasklet(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_tasklet_q0",
+          "pattern": "/^ath_tx_tasklet_q0(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_tasklet_q0123",
+          "pattern": "/^ath_tx_tasklet_q0123(TQUEUE_ARG data)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_timeout",
+          "pattern": "/^ath_tx_timeout(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_txqaddbuf",
+          "pattern": "/^ath_tx_txqaddbuf(struct ath_softc *sc, struct ieee80211_node *ni, $/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_tx_uapsdqueue",
+          "pattern": "/^ath_tx_uapsdqueue(struct ath_softc *sc, struct ath_node *an, struct ath_buf *bf)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_txq_setup",
+          "pattern": "/^ath_txq_setup(struct ath_softc *sc, int qtype, int subtype)$/",
+          "file": true,
+          "typeref": "struct:ath_txq *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_txq_update",
+          "pattern": "/^ath_txq_update(struct ath_softc *sc, struct ath_txq *txq, int ac)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_uapsd_flush",
+          "pattern": "/^ath_uapsd_flush(struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_uapsd_processtriggers",
+          "pattern": "/^ath_uapsd_processtriggers(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_update_txpow",
+          "pattern": "/^ath_update_txpow(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_updateslot",
+          "pattern": "/^ath_updateslot(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_vap_create",
+          "pattern": "/^ath_vap_create(struct ieee80211com *ic, const char *name, int unit,$/",
+          "file": true,
+          "typeref": "struct:ieee80211vap *",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_vap_delete",
+          "pattern": "/^ath_vap_delete(struct ieee80211vap *vap)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_wme_update",
+          "pattern": "/^ath_wme_update(struct ieee80211com *ic)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_xchanmode",
+          "pattern": "/^static int ath_xchanmode = AH_TRUE;\t\t\\/* enable extended channels *\\/$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ath_xr_rate_setup",
+          "pattern": "/^ath_xr_rate_setup(struct net_device *dev)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "athff_approx_txtime",
+          "pattern": "/^athff_approx_txtime(struct ath_softc *sc, struct ath_node *an, struct sk_buff *skb)$/",
+          "file": true,
+          "typeref": "typename:u_int32_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "athff_can_aggregate",
+          "pattern": "/^athff_can_aggregate(struct ath_softc *sc, struct ether_header *eh,$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "autocreate",
+          "pattern": "/^static char *autocreate = NULL;$/",
+          "file": true,
+          "typeref": "typename:char *",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "countrycode",
+          "pattern": "/^static int countrycode = -1;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "dot11_to_ratecode",
+          "pattern": "/^dot11_to_ratecode(struct ath_softc *sc, const HAL_RATE_TABLE *rt, int dot11)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "hal_status_desc",
+          "pattern": "/^static const char *hal_status_desc[] = {$/",
+          "file": true,
+          "typeref": "typename:const char * []",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "key_alloc_2pair",
+          "pattern": "/^key_alloc_2pair(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:u_int16_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "key_alloc_pair",
+          "pattern": "/^key_alloc_pair(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:u_int16_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "key_alloc_single",
+          "pattern": "/^key_alloc_single(struct ath_softc *sc)$/",
+          "file": true,
+          "typeref": "typename:u_int16_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "maxint",
+          "pattern": "/^static int maxint = 0x7fffffff;\t\t\\/* 32-bit big *\\/$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "maxvaps",
+          "pattern": "/^static int maxvaps = -1;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "mincalibrate",
+          "pattern": "/^static int mincalibrate = 1;\t\t\t\\/* once a second *\\/$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "outdoor",
+          "pattern": "/^static int outdoor = -1;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "rate",
+          "pattern": "/^\t\tu_int\t\trate;\t\t\\/* tx\\/rx 802.11 rate *\\/$/",
+          "file": true,
+          "typeref": "typename:u_int",
+          "kind": "member",
+          "scope": "ath_setcurmode::__anon30d3f0390308",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "rate_to_str_map",
+          "pattern": "/^\ttypedef struct rate_to_str_map {$/",
+          "file": true,
+          "kind": "struct",
+          "scope": "ath_grppoll_start",
+          "scopeKind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "ratectl",
+          "pattern": "/^static char *ratectl = DEF_RATE_CTL;$/",
+          "file": true,
+          "typeref": "typename:char *",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "ratekbps",
+          "pattern": "/^\t\tint ratekbps;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "member",
+          "scope": "ath_grppoll_start::rate_to_str_map",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "rfkill",
+          "pattern": "/^static int rfkill = -1;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "set_node_txpower",
+          "pattern": "/^set_node_txpower(void *arg, struct ieee80211_node *ni)$/",
+          "file": true,
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "str",
+          "pattern": "/^\t\tu_int8_t str[4];$/",
+          "file": true,
+          "typeref": "typename:u_int8_t[4]",
+          "kind": "member",
+          "scope": "ath_grppoll_start::rate_to_str_map",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "timeOff",
+          "pattern": "/^\t\tu_int16_t\ttimeOff;\t\\/* LED off time (ms) *\\/$/",
+          "file": true,
+          "typeref": "typename:u_int16_t",
+          "kind": "member",
+          "scope": "ath_setcurmode::__anon30d3f0390308",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "timeOn",
+          "pattern": "/^\t\tu_int16_t\ttimeOn;\t\t\\/* LED on time (ms) *\\/$/",
+          "file": true,
+          "typeref": "typename:u_int16_t",
+          "kind": "member",
+          "scope": "ath_setcurmode::__anon30d3f0390308",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "txqactive",
+          "pattern": "/^txqactive(struct ath_hal *ah, int qnum)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "xchanmode",
+          "pattern": "/^static int xchanmode = -1;$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "variable"
+        }
       ],
       "scan_errors": []
     }
