@@ -38,7 +38,7 @@
           "pattern": "/^\tATH_ACKRATE\t\t= 22,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -47,7 +47,7 @@
           "pattern": "/^\tATH_ACKTIMEOUT\t\t= 2,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -56,7 +56,7 @@
           "pattern": "/^\tATH_COUNTRYCODE\t\t= 6,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -65,7 +65,7 @@
           "pattern": "/^\tATH_CTSTIMEOUT\t\t= 3,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -74,7 +74,7 @@
           "pattern": "/^\tATH_DEBUG\t\t= 8,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -83,7 +83,7 @@
           "pattern": "/^\tATH_DEBUG_ANY\t\t= 0xffffffff$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -92,7 +92,7 @@
           "pattern": "/^\tATH_DEBUG_BEACON \t= 0x00000080,\t\\/* beacon handling *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -101,7 +101,7 @@
           "pattern": "/^\tATH_DEBUG_BEACON_PROC\t= 0x00008000,\t\\/* beacon ISR proc *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -110,7 +110,7 @@
           "pattern": "/^\tATH_DEBUG_CALIBRATE\t= 0x00010000,\t\\/* periodic calibration *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -119,7 +119,7 @@
           "pattern": "/^\tATH_DEBUG_DOTH\t\t= 0x01000000,\t\\/* 11.h *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -128,7 +128,7 @@
           "pattern": "/^\tATH_DEBUG_FATAL\t\t= 0x80000000,\t\\/* fatal errors *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -137,7 +137,7 @@
           "pattern": "/^\tATH_DEBUG_FF\t\t= 0x00200000,\t\\/* fast frames *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -146,7 +146,7 @@
           "pattern": "/^\tATH_DEBUG_INTR\t\t= 0x00001000,\t\\/* ISR *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -155,7 +155,7 @@
           "pattern": "/^\tATH_DEBUG_KEYCACHE\t= 0x00020000,\t\\/* key cache management *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -164,7 +164,7 @@
           "pattern": "/^\tATH_DEBUG_LED\t\t= 0x00100000,\t\\/* led management *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -173,7 +173,7 @@
           "pattern": "/^\tATH_DEBUG_NODE\t\t= 0x00080000,\t\\/* node management *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -182,7 +182,7 @@
           "pattern": "/^\tATH_DEBUG_RATE\t\t= 0x00000010,\t\\/* rate control *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -191,7 +191,7 @@
           "pattern": "/^\tATH_DEBUG_RECV\t\t= 0x00000004,\t\\/* basic recv operation *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -200,7 +200,7 @@
           "pattern": "/^\tATH_DEBUG_RECV_DESC\t= 0x00000008,\t\\/* recv descriptors *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -209,7 +209,7 @@
           "pattern": "/^\tATH_DEBUG_RESET\t\t= 0x00000020,\t\\/* reset processing *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -218,7 +218,7 @@
           "pattern": "/^\tATH_DEBUG_RX_PROC\t= 0x00004000,\t\\/* rx ISR proc *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -227,7 +227,7 @@
           "pattern": "/^\tATH_DEBUG_STATE\t\t= 0x00040000,\t\\/* 802.11 state transitions *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -236,7 +236,7 @@
           "pattern": "/^\tATH_DEBUG_TURBO\t\t= 0x00400000,\t\\/* turbo\\/dynamic turbo *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -245,7 +245,7 @@
           "pattern": "/^\tATH_DEBUG_TX_PROC\t= 0x00002000,\t\\/* tx ISR proc *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -254,7 +254,7 @@
           "pattern": "/^\tATH_DEBUG_UAPSD\t\t= 0x00800000,\t\\/* uapsd *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -263,7 +263,7 @@
           "pattern": "/^\tATH_DEBUG_WATCHDOG \t= 0x00000100,\t\\/* watchdog timeout *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -272,7 +272,7 @@
           "pattern": "/^\tATH_DEBUG_XMIT\t\t= 0x00000001,\t\\/* basic xmit operation *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -281,7 +281,7 @@
           "pattern": "/^\tATH_DEBUG_XMIT_DESC\t= 0x00000002,\t\\/* xmit descriptors *\\/$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390203",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -290,7 +290,7 @@
           "pattern": "/^\tATH_DIVERSITY\t\t= 11,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -306,7 +306,7 @@
           "pattern": "/^\tATH_FFTXQMIN\t\t= 18,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -329,7 +329,7 @@
           "pattern": "/^\tATH_INTMIT\t\t= 23,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -338,7 +338,7 @@
           "pattern": "/^\tATH_LEDPIN\t\t= 5,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -347,7 +347,7 @@
           "pattern": "/^\tATH_LED_POLL,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390103",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -356,7 +356,7 @@
           "pattern": "/^\tATH_LED_RX,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390103",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -365,7 +365,7 @@
           "pattern": "/^\tATH_LED_TX,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390103",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -374,7 +374,7 @@
           "pattern": "/^\tATH_MAXVAPS\t\t= 26,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -383,7 +383,7 @@
           "pattern": "/^\tATH_REGDOMAIN\t\t= 7,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -392,7 +392,7 @@
           "pattern": "/^\tATH_RXANTENNA\t\t= 10,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -422,7 +422,7 @@
           "pattern": "/^\tATH_SLOTTIME\t\t= 1,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -431,7 +431,7 @@
           "pattern": "/^\tATH_SOFTLED\t\t= 4,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -448,7 +448,7 @@
           "pattern": "/^\tATH_TKIPMIC\t\t= 19,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -457,7 +457,7 @@
           "pattern": "/^\tATH_TXANTENNA\t\t= 9,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -466,7 +466,7 @@
           "pattern": "/^\tATH_TXINTRPERIOD \t= 12,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -482,7 +482,7 @@
           "pattern": "/^\tATH_XR_POLL_COUNT \t= 21,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -491,7 +491,7 @@
           "pattern": "/^\tATH_XR_POLL_PERIOD \t= 20,$/",
           "file": true,
           "kind": "enumerator",
-          "scope": "__anon30d3f0390403",
+          "scope": "anonymous",
           "scopeKind": "enum"
         },
         {
@@ -646,21 +646,21 @@
         },
         {
           "_type": "tag",
-          "name": "__anon30d3f0390103",
+          "name": "__anon6f4a32d60103",
           "pattern": "/^enum {$/",
           "file": true,
           "kind": "enum"
         },
         {
           "_type": "tag",
-          "name": "__anon30d3f0390203",
+          "name": "__anon6f4a32d60203",
           "pattern": "/^enum {$/",
           "file": true,
           "kind": "enum"
         },
         {
           "_type": "tag",
-          "name": "__anon30d3f0390308",
+          "name": "__anon6f4a32d60308",
           "pattern": "/^\tstatic const struct {$/",
           "file": true,
           "kind": "struct",
@@ -669,7 +669,7 @@
         },
         {
           "_type": "tag",
-          "name": "__anon30d3f0390403",
+          "name": "__anon6f4a32d60403",
           "pattern": "/^enum {$/",
           "file": true,
           "kind": "enum"
@@ -2002,7 +2002,7 @@
           "file": true,
           "typeref": "typename:u_int",
           "kind": "member",
-          "scope": "ath_setcurmode::__anon30d3f0390308",
+          "scope": "anonymous",
           "scopeKind": "struct"
         },
         {
@@ -2065,7 +2065,7 @@
           "file": true,
           "typeref": "typename:u_int16_t",
           "kind": "member",
-          "scope": "ath_setcurmode::__anon30d3f0390308",
+          "scope": "anonymous",
           "scopeKind": "struct"
         },
         {
@@ -2075,7 +2075,7 @@
           "file": true,
           "typeref": "typename:u_int16_t",
           "kind": "member",
-          "scope": "ath_setcurmode::__anon30d3f0390308",
+          "scope": "anonymous",
           "scopeKind": "struct"
         },
         {
