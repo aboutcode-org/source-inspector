@@ -2,7 +2,9 @@ Changelog
 =========
 
 
-v0.0.0
+v0.1.0
 ------
 
-*xxxx-xx-xx* -- Initial release.
+Initial release with basic source symbols collection using Universal Ctags.
+
+Also available as ScanCode Toolkit plugin.
