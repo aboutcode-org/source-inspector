@@ -1,0 +1,194 @@
+{
+  "files": [
+    {
+      "path": "test3.cpp",
+      "type": "file",
+      "symbols": [
+        {
+          "_type": "tag",
+          "name": "EIP_IN_SIGNAL_FRAME",
+          "pattern": "/^#define EIP_IN_SIGNAL_FRAME /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "EIP_IN_SYSTEM_SIGNAL_FRAME",
+          "pattern": "/^#define EIP_IN_SYSTEM_SIGNAL_FRAME /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "GETFRAMES",
+          "pattern": "/^#define GETFRAMES(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "H",
+          "pattern": "/^#define H(/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "LHN_LIBC_NAME",
+          "pattern": "/^#define LHN_LIBC_NAME /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "SIGACTION_LIBC_OFFSET",
+          "pattern": "/^#define SIGACTION_LIBC_OFFSET /",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "__PRIPTR_PREFIX",
+          "pattern": "/^#  define __PRIPTR_PREFIX$/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "__PRIPTR_PREFIX",
+          "pattern": "/^#  define __PRIPTR_PREFIX\t/",
+          "file": true,
+          "kind": "macro"
+        },
+        {
+          "_type": "tag",
+          "name": "addr2line_obj_dump",
+          "pattern": "/^int addr2line_obj_dump($/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "end",
+          "pattern": "/^\tuintptr_t end ;$/",
+          "file": true,
+          "typeref": "typename:uintptr_t",
+          "kind": "member",
+          "scope": "libmap",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "libmap",
+          "pattern": "/^typedef struct libmap {$/",
+          "file": true,
+          "kind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "map",
+          "pattern": "/^static map_t map ;$/",
+          "file": true,
+          "typeref": "typename:map_t",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "map_t",
+          "pattern": "/^} *map_t ;$/",
+          "file": true,
+          "typeref": "struct:libmap *",
+          "kind": "typedef"
+        },
+        {
+          "_type": "tag",
+          "name": "nmaps",
+          "pattern": "/^static int32_t nmaps ;$/",
+          "file": true,
+          "typeref": "typename:int32_t",
+          "kind": "variable"
+        },
+        {
+          "_type": "tag",
+          "name": "path",
+          "pattern": "/^\tstring_t path ;$/",
+          "file": true,
+          "typeref": "typename:string_t",
+          "kind": "member",
+          "scope": "libmap",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "readmaps",
+          "pattern": "/^readmaps(map_t map, const uint32_t maxmaps)$/",
+          "file": true,
+          "typeref": "typename:int",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "stacktrace_close",
+          "pattern": "/^void stacktrace_close(void) {$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "stacktrace_dump",
+          "pattern": "/^void stacktrace_dump(stacktrace_t *s) {$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "stacktrace_get",
+          "pattern": "/^void stacktrace_get(stacktrace_t *s)$/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "start",
+          "pattern": "/^\tuintptr_t start ;$/",
+          "file": true,
+          "typeref": "typename:uintptr_t",
+          "kind": "member",
+          "scope": "libmap",
+          "scopeKind": "struct"
+        },
+        {
+          "_type": "tag",
+          "name": "string_copy",
+          "pattern": "/^string_t string_copy($/",
+          "typeref": "typename:string_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "string_free",
+          "pattern": "/^void string_free($/",
+          "typeref": "typename:void",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "string_length",
+          "pattern": "/^uint32_t string_length($/",
+          "typeref": "typename:uint32_t",
+          "kind": "function"
+        },
+        {
+          "_type": "tag",
+          "name": "string_t",
+          "pattern": "/^typedef char *string_t ;$/",
+          "file": true,
+          "typeref": "typename:char *",
+          "kind": "typedef"
+        }
+      ],
+      "scan_errors": []
+    }
+  ]
+}
