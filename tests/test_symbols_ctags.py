@@ -8,14 +8,13 @@
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
 
-import json
 import os
 
 from commoncode.testcase import FileBasedTesting
 from scancode.cli_test_utils import check_json_scan
 from scancode.cli_test_utils import run_scan_click
 
-from source_inpector.symbols_ctags import is_ctags_installed
+from source_inspector.symbols_ctags import is_ctags_installed
 
 # Used for tests to regenerate fixtures with regen=True
 REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
