@@ -567,32 +567,6 @@
           "kind": "macro"
         },
         {
-          "name": "anonymous",
-          "pattern": "/^enum {$/",
-          "file": true,
-          "kind": "enum"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^enum {$/",
-          "file": true,
-          "kind": "enum"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^\tstatic const struct {$/",
-          "file": true,
-          "kind": "struct",
-          "scope": "ath_setcurmode",
-          "scopeKind": "function"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^enum {$/",
-          "file": true,
-          "kind": "enum"
-        },
-        {
           "name": "ar_device",
           "pattern": "/^ar_device(int devid)$/",
           "file": true,
