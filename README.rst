@@ -17,10 +17,13 @@ This utility is designed to work on Linux and POSIX OS with these utilities:
 - xgettext that comes with GNU gettext.
 - universal ctags, version 5.9 or higher, built with JSON support.
 
- On Debian systems run this::
+On Debian systems run this::
 
     sudo apt-get install universal-ctags gettext
 
+On MacOS systems run this::
+
+    brew install universal-ctags gettext
 
 To get started:
 ~~~~~~~~~~~~~~~~
