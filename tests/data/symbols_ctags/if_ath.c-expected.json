@@ -646,21 +646,21 @@
         },
         {
           "_type": "tag",
-          "name": "__anon6f4a32d60103",
+          "name": "anonymous",
           "pattern": "/^enum {$/",
           "file": true,
           "kind": "enum"
         },
         {
           "_type": "tag",
-          "name": "__anon6f4a32d60203",
+          "name": "anonymous",
           "pattern": "/^enum {$/",
           "file": true,
           "kind": "enum"
         },
         {
           "_type": "tag",
-          "name": "__anon6f4a32d60308",
+          "name": "anonymous",
           "pattern": "/^\tstatic const struct {$/",
           "file": true,
           "kind": "struct",
@@ -669,7 +669,7 @@
         },
         {
           "_type": "tag",
-          "name": "__anon6f4a32d60403",
+          "name": "anonymous",
           "pattern": "/^enum {$/",
           "file": true,
           "kind": "enum"
