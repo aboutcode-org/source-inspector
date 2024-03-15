@@ -68,7 +68,14 @@ def collect_strings(location, strip=False):
 
     rc, result, err = command.execute(
         cmd_loc="xgettext",
-        args=["--omit-header", "--no-wrap", "--extract-all", "--output=-", location],
+        args=[
+            "--omit-header",
+            "--no-wrap",
+            "--extract-all",
+            "--from-code=UTF-8",
+            "--output=-",
+            location,
+        ],
         to_files=False,
     )
 
@@ -110,8 +117,14 @@ def parse_po_text(po_text, strip=False):
         strings = []
         for line in lines:
             if line.startswith("#: "):
-                _, _, start_line = line.rpartition(":")
-                line_numbers.append(int(start_line.strip()))
+                # we can have either of these two forms:
+                # #: lineedit.c:1571 lineedit.c:1587 lineedit.c:163
+                # #: lineedit.c:1571
+                _, _, line = line.partition("#: ")
+                filename, _, _ = line.partition(":")
+                numbers = line.replace(filename + ":", "")
+                numbers = [int(l) for ln in numbers.split() if (l := ln.strip())]
+                line_numbers.extend(numbers)
 
             elif line.startswith(
                 (

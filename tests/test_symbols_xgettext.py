@@ -184,6 +184,37 @@ msgstr ""
 
         assert results == expected
 
+    def test_parse_po_text_multilines_on_one_line(self):
+        test = """#: tests/data/strings_xgettext/test3.cpp:104
+#: tests/data/strings_xgettext/test3.cpp:107
+msgid "%"
+msgstr ""
+
+#: tests/data/strings_xgettext/test3.cpp:104 tests/data/strings_xgettext/test3.cpp:107 tests/data/strings_xgettext/test3.cpp:140
+msgid "x"
+msgstr ""
+"""
+        results = list(parse_po_text(test))
+        expected = [
+            {
+                "line_numbers": [
+                    104,
+                    107,
+                ],
+                "string": "%",
+            },
+            {
+                "line_numbers": [
+                    104,
+                    107,
+                    140,
+                ],
+                "string": "x",
+            },
+        ]
+
+        assert results == expected
+
     def test_strings_scanner_basic_cli_cpp(self):
         test_file = self.get_test_loc("test3.cpp")
         result_file = self.get_temp_file("json")
@@ -191,4 +222,13 @@ msgstr ""
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_strings_scanner_multilines_utf8(self):
+        test_file = self.get_test_loc("lineedit.c")
+        result_file = self.get_temp_file("json")
+        args = ["--source-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("lineedit.c-expected.json", must_exist=False)
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
