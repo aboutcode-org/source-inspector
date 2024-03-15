@@ -10,7 +10,6 @@
 
 import json
 import logging
-import re
 
 import attr
 from commoncode import command
@@ -88,8 +87,6 @@ def collect_symbols(location):
         "typeref",
     }
 
-    ignored_anon_tag = re.compile(r"__anon[0-9a-f]+")
-
     for line in result.splitlines(False):
         line = line.strip()
         if not line:
@@ -97,8 +94,11 @@ def collect_symbols(location):
         tag = json.loads(line)
 
         # Ignore the anonymous tags.
-        if "name" in tag and ignored_anon_tag.match(tag["name"]):
+        if (name := tag.get("name")) and "__anon" in name:
             continue
+
+        if (scope := tag.get("scope")) and "__anon" in scope:
+            tag["scope"] = "anonymous"
 
         # only keep some fields
         # see ctags --output-format=json --list-fields for a full list

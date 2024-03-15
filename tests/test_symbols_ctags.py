@@ -21,28 +21,6 @@ from source_inpector.symbols_ctags import is_ctags_installed
 REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
 
-def clean_ctags(json_scan_file):
-    """
-    Clean a JSON ``json_scan_file`` file and save back in place.
-    """
-    with open(json_scan_file) as inp:
-        scan = json.load(inp)
-        for file in scan["files"]:
-            for sym in file["source_symbols"]:
-                # these change on each machine/version
-                scope = sym.get("scope")
-                if scope and "__anon" in scope:
-                    sym["scope"] = "anonymous"
-
-                # these change on each machine/version
-                name = sym.get("name")
-                if name and "__anon" in name:
-                    sym["name"] = "anonymous"
-
-    with open(json_scan_file, "w") as out:
-        json.dump(scan, out, indent=2)
-
-
 class TestCtagsSymbolScannerPlugin(FileBasedTesting):
 
     test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_ctags")
@@ -55,7 +33,6 @@ class TestCtagsSymbolScannerPlugin(FileBasedTesting):
         result_file = self.get_temp_file("json")
         args = ["--source-symbol", test_file, "--json-pp", result_file]
         run_scan_click(args)
-        clean_ctags(json_scan_file=result_file)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
@@ -65,7 +42,6 @@ class TestCtagsSymbolScannerPlugin(FileBasedTesting):
         result_file = self.get_temp_file("json")
         args = ["--source-symbol", test_file, "--json-pp", result_file]
         run_scan_click(args)
-        clean_ctags(json_scan_file=result_file)
 
         expected_loc = self.get_test_loc("if_ath.c-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
