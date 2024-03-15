@@ -3,7 +3,7 @@
     {
       "path": "test3.cpp",
       "type": "file",
-      "symbols": [
+      "source_symbols": [
         {
           "name": "EIP_IN_SIGNAL_FRAME",
           "pattern": "/^#define EIP_IN_SIGNAL_FRAME /",

@@ -33,7 +33,7 @@ class CtagsSymbolScannerPlugin(ScanPlugin):
     """
 
     resource_attributes = dict(
-        symbols=attr.ib(default=attr.Factory(list), repr=False),
+        source_symbols=attr.ib(default=attr.Factory(list), repr=False),
     )
 
     options = [
@@ -58,7 +58,7 @@ def get_symbols(location, **kwargs):
     """
     Return a mapping of symbols for a source file at ``location``.
     """
-    return dict(symbols=list(collect_symbols(location=location)))
+    return dict(source_symbols=list(collect_symbols(location=location)))
 
 
 def collect_symbols(location):

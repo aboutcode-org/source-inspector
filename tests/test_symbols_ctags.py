@@ -28,7 +28,7 @@ def clean_ctags(json_scan_file):
     with open(json_scan_file) as inp:
         scan = json.load(inp)
         for file in scan["files"]:
-            for sym in file["symbols"]:
+            for sym in file["source_symbols"]:
                 # these change on each machine/version
                 scope = sym.get("scope")
                 if scope and "__anon" in scope:

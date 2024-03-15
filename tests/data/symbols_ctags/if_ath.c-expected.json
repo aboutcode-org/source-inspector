@@ -3,7 +3,7 @@
     {
       "path": "if_ath.c",
       "type": "file",
-      "symbols": [
+      "source_symbols": [
         {
           "name": "AR5K_AR5212_STA_ID1",
           "pattern": "/^#define AR5K_AR5212_STA_ID1 /",
