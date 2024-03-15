@@ -94,7 +94,7 @@ def collect_symbols(location):
         tag = json.loads(line)
 
         # Ignore the anonymous tags.
-        if (name := tag.get("name")) and "__anon" in name:
+        if (name := tag.get("name")) and is_anon_string(name):
             continue
 
         if (scope := tag.get("scope")) and "__anon" in scope:
@@ -103,6 +103,26 @@ def collect_symbols(location):
         # only keep some fields
         # see ctags --output-format=json --list-fields for a full list
         yield {k: v for k, v in tag.items() if k in supported_fields}
+
+
+def is_anon_string(symbol):
+    """
+    Check if a symbol is an anonymous string.
+    An anonymous symbol starts with `__anon` followed by a hexadecimal string.
+
+    Examples:
+    >>> is_anon_string("__anon722f7bb60308")
+    True
+    >>> is_anon_string("__anon_user_id")
+    False
+    """
+    if symbol.startswith("__anon"):
+        hex_part = symbol[6:]
+        for c in hex_part:
+            if c not in "0123456789abcdef":
+                return False
+        return True
+    return False
 
 
 _IS_CTAGS_INSTALLED = None
