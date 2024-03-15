@@ -50,7 +50,7 @@ msgstr ""
 msgid "Collect source symbols using Universal ctags."
 msgstr ""
 """
-        results = list(parse_po_text(test))
+        results = list(parse_po_text(test, clean=False))
         expected = [
             {
                 "line_numbers": [
@@ -80,7 +80,7 @@ msgstr ""
 
         assert results == expected
 
-        results = list(parse_po_text(test, strip=True))
+        results = list(parse_po_text(test, clean=True))
         expected = [
             {
                 "line_numbers": [

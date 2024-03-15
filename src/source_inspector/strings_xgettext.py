@@ -9,6 +9,7 @@
 #
 
 import logging
+import string
 
 import attr
 from commoncode import command
@@ -55,13 +56,13 @@ def get_source_strings(location, **kwargs):
     """
     Return a mapping of strings for a source file at ``location``.
     """
-    return dict(source_strings=list(collect_strings(location=location, strip=True)))
+    return dict(source_strings=list(collect_strings(location=location, clean=True)))
 
 
-def collect_strings(location, strip=False):
+def collect_strings(location, clean=True):
     """
     Yield mappings of strings collected from file at location.
-    Strip strings if ``strip`` is True.
+    Clean strings if ``clean`` is True.
     """
     if not is_xgettext_installed():
         return
@@ -82,13 +83,13 @@ def collect_strings(location, strip=False):
     if rc != 0:
         raise Exception(open(err).read())
 
-    yield from parse_po_text(po_text=result, strip=strip)
+    yield from parse_po_text(po_text=result, clean=clean)
 
 
-def parse_po_text(po_text, strip=False):
+def parse_po_text(po_text, clean=True):
     """
     Yield mappings of strings collected from the ``po_text`` string.
-    Strip strings if ``strip`` is True.
+    Clean strings if ``clean`` is True.
 
     The po text lines looks like this:
     - Blocks sperated by 2 lines.
@@ -143,12 +144,57 @@ def parse_po_text(po_text, strip=False):
             elif line.startswith('"'):
                 strings.append(line)
 
-        strings = [l.strip('"').replace("\\n", "\n") for l in strings]
+        strings = [l.strip('"') for l in strings]
         string = "".join(strings)
-        if strip:
-            string = string.strip()
+        if clean:
+            string = clean_string(string)
+        if string:
+            yield dict(line_numbers=line_numbers, string=string)
 
-        yield dict(line_numbers=line_numbers, string=string)
+
+def clean_string(s):
+    """
+    Return a cleaned and normalized string or None.
+    """
+    s = s.strip('"')
+    s = s.replace("\\n", "\n")
+    s = s.strip()
+    non_printables = {
+        "\\a": "\a",
+        "\\b": "\b",
+        "\\v": "\v",
+        "\\f": "\f",
+        "\\x01": "\x01",
+        "\\x02": "\x02",
+        "\\x03": "\x03",
+        "\\x04": "\x04",
+        "\\x05": "\x05",
+        "\\x06": "\x06",
+        "\\x0e": "\x0e",
+        "\\x0f": "\x0f",
+        "\\x10": "\x10",
+        "\\x11": "\x11",
+        "\\x12": "\x12",
+        "\\x13": "\x13",
+        "\\x14": "\x14",
+        "\\x15": "\x15",
+        "\\x16": "\x16",
+        "\\x17": "\x17",
+        "\\x18": "\x18",
+        "\\x19": "\x19",
+        "\\x1a": "\x1a",
+        "\\x1b": "\x1b",
+        "\\x1c": "\x1c",
+        "\\x1d": "\x1d",
+        "\\x1e": "\x1e",
+        "\\x1f": "\x1f",
+        "\\x7f": "\x7f",
+    }
+
+    for plain, encoded in non_printables.items():
+        s = s.replace(plain, "")
+        s = s.replace(encoded, "")
+    return s
 
 
 _IS_XGETTEXT_INSTALLED = None
