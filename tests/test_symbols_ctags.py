@@ -29,10 +29,16 @@ def clean_ctags(json_scan_file):
         scan = json.load(inp)
         for file in scan["files"]:
             for sym in file["symbols"]:
-                scope = sym.get("scope")
                 # these change on each machine/version
+                scope = sym.get("scope")
                 if scope and "__anon" in scope:
                     sym["scope"] = "anonymous"
+
+                # these change on each machine/version
+                name = sym.get("name")
+                if name and "__anon" in name:
+                    sym["name"] = "anonymous"
+
     with open(json_scan_file, "w") as out:
         json.dump(scan, out, indent=2)
 
