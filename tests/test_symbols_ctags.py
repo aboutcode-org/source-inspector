@@ -18,7 +18,7 @@ from scancode.cli_test_utils import run_scan_click
 from source_inpector.symbols_ctags import is_ctags_installed
 
 # Used for tests to regenerate fixtures with regen=True
-REGEN_TEST_FIXTURES = os.getenv('SCANCODE_REGEN_TEST_FIXTURES', False)
+REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
 
 def clean_ctags(json_scan_file):

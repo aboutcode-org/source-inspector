@@ -2,23 +2,31 @@ source-inspector
 ================================
 
 source-inspector is a set of utilities to inspect and analyze source
-code and collect interesting data using various tools such as code symbols.
+code and collect interesting data using various tools such as code symbols and strings.
 This is also a ScanCode-toolkit plugin.
 
-This is a work in progress.
+Homepage: https://github.com/nexB/source-inspector
+License: Apache-2.0
 
 
-You will need to have universal ctags installed, version 5.9 or higher, built with JSON support.
+Requirements
+~~~~~~~~~~~~~
 
-On Debian systems run this::
+This utility is designed to work on Linux and POSIX OS with these utilities:
 
-    sudo apt-get install universal-ctags
+- xgettext that comes with GNU gettext.
+- universal ctags, version 5.9 or higher, built with JSON support.
+
+ On Debian systems run this::
+
+    sudo apt-get install universal-ctags gettext
 
 
 To get started:
-
+~~~~~~~~~~~~~~~~
 
 1. Clone this repo
+
 2. Run::
 
     ./configure --dev
@@ -30,7 +38,9 @@ To get started:
 
 4. Run a basic scan to collect symbols and display as YAML on screen::
 
-    scancode --yaml - --source-symbol tests/data/symbols_ctags/test3.cpp
+    scancode --source-symbol tests/data/symbols_ctags/test3.cpp --yaml -
 
-Homepage: https://github.com/nexB/source-inspector
-License: Apache-2.0
+5. Run a basic scan to collect strings and display as YAML on screen::
+
+    scancode --source-string tests/data/symbols_ctags/test3.cpp --yaml -
+    

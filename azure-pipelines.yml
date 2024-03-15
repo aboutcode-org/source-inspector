@@ -13,6 +13,7 @@ jobs:
           image_name: ubuntu-20.04
           python_versions: ['3.7', '3.8', '3.9', '3.10', '3.11']
           test_suites:
+              sudo apt-get install universal-ctags gettext
               all: venv/bin/pytest -n 2 -vvs
 
     - template: etc/ci/azure-posix.yml
@@ -21,7 +22,9 @@ jobs:
           image_name: ubuntu-22.04
           python_versions: ['3.7', '3.8', '3.9', '3.10', '3.11']
           test_suites:
-              all: venv/bin/pytest -n 2 -vvs
+              all: |
+                 sudo apt-get install universal-ctags gettext
+                 venv/bin/pytest -n 2 -vvs
 
 # - template: etc/ci/azure-posix.yml
 #   parameters:
