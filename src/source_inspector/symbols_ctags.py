@@ -32,7 +32,7 @@ class CtagsSymbolScannerPlugin(ScanPlugin):
     """
 
     resource_attributes = dict(
-        symbols=attr.ib(default=attr.Factory(list), repr=False),
+        source_symbols=attr.ib(default=attr.Factory(list), repr=False),
     )
 
     options = [
@@ -57,7 +57,7 @@ def get_symbols(location, **kwargs):
     """
     Return a mapping of symbols for a source file at ``location``.
     """
-    return dict(symbols=list(collect_symbols(location=location)))
+    return dict(source_symbols=list(collect_symbols(location=location)))
 
 
 def collect_symbols(location):
@@ -93,9 +93,36 @@ def collect_symbols(location):
             continue
         tag = json.loads(line)
 
+        # Ignore the anonymous tags.
+        if (name := tag.get("name")) and is_anon_string(name):
+            continue
+
+        if (scope := tag.get("scope")) and "__anon" in scope:
+            tag["scope"] = "anonymous"
+
         # only keep some fields
         # see ctags --output-format=json --list-fields for a full list
         yield {k: v for k, v in tag.items() if k in supported_fields}
+
+
+def is_anon_string(symbol):
+    """
+    Check if a symbol is an anonymous string.
+    An anonymous symbol starts with `__anon` followed by a hexadecimal string.
+
+    Examples:
+    >>> is_anon_string("__anon722f7bb60308")
+    True
+    >>> is_anon_string("__anon_user_id")
+    False
+    """
+    if symbol.startswith("__anon"):
+        hex_part = symbol[6:]
+        for c in hex_part:
+            if c not in "0123456789abcdef":
+                return False
+        return True
+    return False
 
 
 _IS_CTAGS_INSTALLED = None

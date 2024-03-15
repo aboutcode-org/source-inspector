@@ -3,7 +3,7 @@
     {
       "path": "if_ath.c",
       "type": "file",
-      "symbols": [
+      "source_symbols": [
         {
           "name": "AR5K_AR5212_STA_ID1",
           "pattern": "/^#define AR5K_AR5212_STA_ID1 /",
@@ -565,32 +565,6 @@
           "pattern": "/^#define US_PER_4MS /",
           "file": true,
           "kind": "macro"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^enum {$/",
-          "file": true,
-          "kind": "enum"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^enum {$/",
-          "file": true,
-          "kind": "enum"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^\tstatic const struct {$/",
-          "file": true,
-          "kind": "struct",
-          "scope": "ath_setcurmode",
-          "scopeKind": "function"
-        },
-        {
-          "name": "anonymous",
-          "pattern": "/^enum {$/",
-          "file": true,
-          "kind": "enum"
         },
         {
           "name": "ar_device",

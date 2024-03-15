@@ -8,14 +8,12 @@
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
 
-import json
 import logging
 
 import attr
 from commoncode import command
 from commoncode.cliutils import SCAN_GROUP
 from commoncode.cliutils import PluggableCommandLineOption
-from normality import stringify
 from plugincode.scan import ScanPlugin
 from plugincode.scan import scan_impl
 
