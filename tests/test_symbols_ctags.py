@@ -18,7 +18,7 @@ from scancode.cli_test_utils import run_scan_click
 from source_inpector.symbols_ctags import is_ctags_installed
 
 # Used for tests to regenerate fixtures with regen=True
-REGEN_TEST_FIXTURES = os.getenv('SCANCODE_REGEN_TEST_FIXTURES', False)
+REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
 
 def clean_ctags(json_scan_file):
@@ -29,10 +29,16 @@ def clean_ctags(json_scan_file):
         scan = json.load(inp)
         for file in scan["files"]:
             for sym in file["symbols"]:
-                scope = sym.get("scope")
                 # these change on each machine/version
+                scope = sym.get("scope")
                 if scope and "__anon" in scope:
                     sym["scope"] = "anonymous"
+
+                # these change on each machine/version
+                name = sym.get("name")
+                if name and "__anon" in name:
+                    sym["name"] = "anonymous"
+
     with open(json_scan_file, "w") as out:
         json.dump(scan, out, indent=2)
 

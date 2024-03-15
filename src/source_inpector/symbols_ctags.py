@@ -20,6 +20,7 @@ from plugincode.scan import scan_impl
 
 """
 Extract symbols information from source code files with ctags.
+See https://docs.ctags.io/en/stable/man/ctags-json-output.5.html
 """
 LOG = logging.getLogger(__name__)
 
@@ -75,13 +76,26 @@ def collect_symbols(location):
     if rc != 0:
         raise Exception(open(err).read())
 
+    # set of ctags field names we support
+    supported_fields = {
+        "name",
+        "pattern",
+        "file",
+        "kind",
+        "scope",
+        "scopeKind",
+        "typeref",
+    }
+
     for line in result.splitlines(False):
         line = line.strip()
         if not line:
             continue
         tag = json.loads(line)
-        del tag["path"]
-        yield tag
+
+        # only keep some fields
+        # see ctags --output-format=json --list-fields for a full list
+        yield {k: v for k, v in tag.items() if k in supported_fields}
 
 
 _IS_CTAGS_INSTALLED = None

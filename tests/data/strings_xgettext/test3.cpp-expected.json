@@ -1,0 +1,141 @@
+{
+  "files": [
+    {
+      "path": "test3.cpp",
+      "type": "file",
+      "source_strings": [
+        {
+          "line_numbers": [
+            21
+          ],
+          "string": "l"
+        },
+        {
+          "line_numbers": [
+            70
+          ],
+          "string": "/proc/%d/maps"
+        },
+        {
+          "line_numbers": [
+            71
+          ],
+          "string": "ro"
+        },
+        {
+          "line_numbers": [
+            104,
+            107
+          ],
+          "string": "%"
+        },
+        {
+          "line_numbers": [
+            104,
+            107,
+            140,
+            143,
+            162,
+            165
+          ],
+          "string": "x"
+        },
+        {
+          "line_numbers": [
+            123
+          ],
+          "string": "/lib/libc-2.2.4.so"
+        },
+        {
+          "line_numbers": [
+            140,
+            162
+          ],
+          "string": "/usr/bin/addr2line --functions -C -e %s 0x%"
+        },
+        {
+          "line_numbers": [
+            143,
+            165
+          ],
+          "string": "/usr/bin/addr2line --functions -C -e /proc/%d/exe 0x%"
+        },
+        {
+          "line_numbers": [
+            146,
+            168
+          ],
+          "string": "r"
+        },
+        {
+          "line_numbers": [
+            160
+          ],
+          "string": "??:0"
+        },
+        {
+          "line_numbers": [
+            160
+          ],
+          "string": "??"
+        },
+        {
+          "line_numbers": [
+            183
+          ],
+          "string": "sigaction.c:149"
+        },
+        {
+          "line_numbers": [
+            187
+          ],
+          "string": "__pthread_sighandler"
+        },
+        {
+          "line_numbers": [
+            189
+          ],
+          "string": "__restore"
+        },
+        {
+          "line_numbers": [
+            200
+          ],
+          "string": "%s %s"
+        },
+        {
+          "line_numbers": [
+            203
+          ],
+          "string": "??:0 ??"
+        },
+        {
+          "line_numbers": [
+            223
+          ],
+          "string": "STACKTRACE:dump"
+        },
+        {
+          "line_numbers": [
+            235,
+            238
+          ],
+          "string": "frame=%02d pc=0x%0*"
+        },
+        {
+          "line_numbers": [
+            235
+          ],
+          "string": "x %s"
+        },
+        {
+          "line_numbers": [
+            238
+          ],
+          "string": "x unknown"
+        }
+      ],
+      "scan_errors": []
+    }
+  ]
+}
