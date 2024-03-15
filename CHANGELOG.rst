@@ -13,5 +13,8 @@ v0.2.0
 ------
 
 Add source strings collection using xgettext.
+Ignore anonymous symbols in symbols_ctags.
+Fix typo in package name.
+Rename symbols output to source_symbols.
 
 
