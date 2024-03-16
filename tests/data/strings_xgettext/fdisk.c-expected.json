@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "fdisk.c",
+      "type": "file",
+      "source_strings": [
+        {
+          "line_numbers": [
+            20
+          ],
+          "string": "OS/2 Boot Manager"
+        },
+        {
+          "line_numbers": [
+            21
+          ],
+          "string": "BSFS"
+        },
+        {
+          "line_numbers": [
+            22
+          ],
+          "string": "cGNU HURD or SysV"
+        },
+        {
+          "line_numbers": [
+            23
+          ],
+          "string": "Old Minix"
+        },
+        {
+          "line_numbers": [
+            24
+          ],
+          "string": "Minix / old Linux"
+        },
+        {
+          "line_numbers": [
+            25
+          ],
+          "string": "Linux swap"
+        },
+        {
+          "line_numbers": [
+            26
+          ],
+          "string": "Linux"
+        },
+        {
+          "line_numbers": [
+            27
+          ],
+          "string": "OS/2 hidden C: drive"
+        },
+        {
+          "line_numbers": [
+            28
+          ],
+          "string": "Linux extended"
+        },
+        {
+          "line_numbers": [
+            29
+          ],
+          "string": "NTFS volume set"
+        },
+        {
+          "line_numbers": [
+            30
+          ],
+          "string": "NTFS volume set"
+        },
+        {
+          "line_numbers": [
+            31
+          ],
+          "string": "Linux LVM"
+        },
+        {
+          "line_numbers": [
+            32
+          ],
+          "string": "BSD/OS"
+        }
+      ],
+      "scan_errors": []
+    }
+  ]
+}

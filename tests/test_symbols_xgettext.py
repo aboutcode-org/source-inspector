@@ -232,3 +232,12 @@ msgstr ""
 
         expected_loc = self.get_test_loc("lineedit.c-expected.json", must_exist=False)
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_strings_scanner_unicode(self):
+        test_file = self.get_test_loc("fdisk.c")
+        result_file = self.get_temp_file("json")
+        args = ["--source-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("fdisk.c-expected.json", must_exist=False)
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)

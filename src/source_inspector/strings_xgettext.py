@@ -70,7 +70,9 @@ def collect_strings(location, clean=True):
     rc, result, err = command.execute(
         cmd_loc="xgettext",
         args=[
-            "--omit-header",
+            # this is a trick to force getting UTF back
+            # see https://github.com/nexB/source-inspector/issues/14#issuecomment-2001893496
+            '--copyright-holder="ø"',
             "--no-wrap",
             "--extract-all",
             "--from-code=UTF-8",
@@ -83,16 +85,18 @@ def collect_strings(location, clean=True):
     if rc != 0:
         raise Exception(open(err).read())
 
-    yield from parse_po_text(po_text=result, clean=clean)
+    yield from parse_po_text(po_text=result, drop_header=True, clean=clean)
 
 
-def parse_po_text(po_text, clean=True):
+def parse_po_text(po_text, drop_header=False, clean=True):
     """
     Yield mappings of strings collected from the ``po_text`` string.
     Clean strings if ``clean`` is True.
+    Drop the "header" first block if ``drop_header`` is True
 
     The po text lines looks like this:
-    - Blocks sperated by 2 lines.
+    - Blocks separated by 2 lines.
+    - Optional first header block
     - The first lines starting with #: are comments with the line numbers.
     - The lines starting with #, are flags, not interesting
     - We care about the lines in the middle starting with the first msgid
@@ -112,8 +116,13 @@ def parse_po_text(po_text, clean=True):
     msgstr ""
     """
 
-    for chunk in po_text.split("\n\n"):
-        lines = chunk.splitlines(False)
+    blocks = po_text.split("\n\n")
+    if drop_header:
+        # drop the first block which is the header
+        blocks = blocks[1:]
+
+    for block in blocks:
+        lines = block.splitlines(False)
         line_numbers = []
         strings = []
         for line in lines:
