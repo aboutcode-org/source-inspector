@@ -17,6 +17,7 @@ from commoncode.cliutils import SCAN_GROUP
 from commoncode.cliutils import PluggableCommandLineOption
 from plugincode.scan import ScanPlugin
 from plugincode.scan import scan_impl
+from typecode.contenttype import Type
 
 """
 Extract strinsg from source code files with xgettext.
@@ -65,6 +66,9 @@ def collect_strings(location, clean=True):
     Clean strings if ``clean`` is True.
     """
     if not is_xgettext_installed():
+        return
+
+    if not Type(location).is_source:
         return
 
     rc, result, err = command.execute(
