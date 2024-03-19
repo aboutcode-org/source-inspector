@@ -75,12 +75,6 @@
             31
           ],
           "string": "Linux LVM"
-        },
-        {
-          "line_numbers": [
-            32
-          ],
-          "string": "BSD/OS"
         }
       ],
       "scan_errors": []

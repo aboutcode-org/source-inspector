@@ -29,4 +29,3 @@ static void list_types(const char *const *sys);
 	"\x86" "NTFS volume set",
 	"\x87" "NTFS volume set",
 	"\x8e" "Linux LVM",
-	"\x9f" "BSD/OS",           /* BSDI */
