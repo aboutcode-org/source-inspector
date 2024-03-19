@@ -17,6 +17,7 @@ from commoncode.cliutils import SCAN_GROUP
 from commoncode.cliutils import PluggableCommandLineOption
 from plugincode.scan import ScanPlugin
 from plugincode.scan import scan_impl
+from typecode.contenttype import Type
 
 """
 Extract symbols information from source code files with ctags.
@@ -65,6 +66,9 @@ def collect_symbols(location):
     Yield mappings of symbols collected from file at location.
     """
     if not is_ctags_installed():
+        return
+
+    if not Type(location).is_source:
         return
 
     rc, result, err = command.execute(

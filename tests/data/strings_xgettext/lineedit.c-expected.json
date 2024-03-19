@@ -1,0 +1,213 @@
+{
+  "files": [
+    {
+      "path": "lineedit.c",
+      "type": "file",
+      "source_strings": [
+        {
+          "line_numbers": [
+            128,
+            2645
+          ],
+          "string": "[J"
+        },
+        {
+          "line_numbers": [
+            257,
+            259
+          ],
+          "string": "HOME"
+        },
+        {
+          "line_numbers": [
+            454,
+            575,
+            590
+          ],
+          "string": "\\r"
+        },
+        {
+          "line_numbers": [
+            550
+          ],
+          "string": "[%uD"
+        },
+        {
+          "line_numbers": [
+            575,
+            590,
+            603
+          ],
+          "string": "[%uA"
+        },
+        {
+          "line_numbers": [
+            595
+          ],
+          "string": "[%uC"
+        },
+        {
+          "line_numbers": [
+            774
+          ],
+          "string": "~%s/"
+        },
+        {
+          "line_numbers": [
+            801
+          ],
+          "string": "PATH"
+        },
+        {
+          "line_numbers": [
+            846,
+            902
+          ],
+          "string": "."
+        },
+        {
+          "line_numbers": [
+            905
+          ],
+          "string": "A"
+        },
+        {
+          "line_numbers": [
+            1000
+          ],
+          "string": "%s"
+        },
+        {
+          "line_numbers": [
+            1109
+          ],
+          "string": "command_mode(0:exe/1:dir/2:file):%d"
+        },
+        {
+          "line_numbers": [
+            1127
+          ],
+          "string": "final match_buf:'%s'"
+        },
+        {
+          "line_numbers": [
+            1165
+          ],
+          "string": "%s%-*s"
+        },
+        {
+          "line_numbers": [
+            1186
+          ],
+          "string": "`'\\\"\\\\#$~?*[{()&;|<>"
+        },
+        {
+          "line_numbers": [
+            1346
+          ],
+          "string": "%s%s"
+        },
+        {
+          "line_numbers": [
+            1463
+          ],
+          "string": "%4d %s"
+        },
+        {
+          "line_numbers": [
+            1564
+          ],
+          "string": "a"
+        },
+        {
+          "line_numbers": [
+            1571,
+            1587,
+            1639
+          ],
+          "string": "%s"
+        },
+        {
+          "line_numbers": [
+            1582,
+            1631
+          ],
+          "string": "%s.%u.new"
+        },
+        {
+          "line_numbers": [
+            1903
+          ],
+          "string": "[6n"
+        },
+        {
+          "line_numbers": [
+            1958
+          ],
+          "string": "HH:MM:SS"
+        },
+        {
+          "line_numbers": [
+            2042
+          ],
+          "string": "PWD"
+        },
+        {
+          "line_numbers": [
+            2408
+          ],
+          "string": "(reverse-i-search)'%s':"
+        },
+        {
+          "line_numbers": [
+            2537
+          ],
+          "string": "history[%d]:'%s'"
+        },
+        {
+          "line_numbers": [
+            2538
+          ],
+          "string": "cur_history:%d cnt_history:%d"
+        },
+        {
+          "line_numbers": [
+            2645
+          ],
+          "string": "[H"
+        },
+        {
+          "line_numbers": [
+            3045
+          ],
+          "string": "debug stuff usage"
+        },
+        {
+          "line_numbers": [
+            3052
+          ],
+          "string": "\\\\[\\\\033[32;1m\\\\]\\\\u@\\\\[\\[33;1m\\\\]\\\\h:\\\\[\\\\033[34;1m\\\\]\\\\w\\\\[\\\\033[35;1m\\\\] \\\\!\\\\[\\\\e[36;1m\\\\]\\\\$ \\\\[\\\\E[m\\\\]"
+        },
+        {
+          "line_numbers": [
+            3056
+          ],
+          "string": "%"
+        },
+        {
+          "line_numbers": [
+            3065
+          ],
+          "string": "*** read_line_input() returned line =%s="
+        },
+        {
+          "line_numbers": [
+            3067
+          ],
+          "string": "*** read_line_input() detect ^D"
+        }
+      ],
+      "scan_errors": []
+    }
+  ]
+}

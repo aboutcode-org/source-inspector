@@ -9,7 +9,9 @@
 #
 
 import os
+import platform
 
+import pytest
 from commoncode.testcase import FileBasedTesting
 from scancode.cli_test_utils import check_json_scan
 from scancode.cli_test_utils import run_scan_click
@@ -50,7 +52,7 @@ msgstr ""
 msgid "Collect source symbols using Universal ctags."
 msgstr ""
 """
-        results = list(parse_po_text(test))
+        results = list(parse_po_text(test, clean=False))
         expected = [
             {
                 "line_numbers": [
@@ -80,7 +82,7 @@ msgstr ""
 
         assert results == expected
 
-        results = list(parse_po_text(test, strip=True))
+        results = list(parse_po_text(test, clean=True))
         expected = [
             {
                 "line_numbers": [
@@ -184,6 +186,37 @@ msgstr ""
 
         assert results == expected
 
+    def test_parse_po_text_multilines_on_one_line(self):
+        test = """#: tests/data/strings_xgettext/test3.cpp:104
+#: tests/data/strings_xgettext/test3.cpp:107
+msgid "%"
+msgstr ""
+
+#: tests/data/strings_xgettext/test3.cpp:104 tests/data/strings_xgettext/test3.cpp:107 tests/data/strings_xgettext/test3.cpp:140
+msgid "x"
+msgstr ""
+"""
+        results = list(parse_po_text(test))
+        expected = [
+            {
+                "line_numbers": [
+                    104,
+                    107,
+                ],
+                "string": "%",
+            },
+            {
+                "line_numbers": [
+                    104,
+                    107,
+                    140,
+                ],
+                "string": "x",
+            },
+        ]
+
+        assert results == expected
+
     def test_strings_scanner_basic_cli_cpp(self):
         test_file = self.get_test_loc("test3.cpp")
         result_file = self.get_temp_file("json")
@@ -191,4 +224,28 @@ msgstr ""
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_strings_scanner_multilines_utf8(self):
+        test_file = self.get_test_loc("lineedit.c")
+        result_file = self.get_temp_file("json")
+        args = ["--source-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("lineedit.c-expected.json", must_exist=False)
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    @pytest.mark.skipif(
+        platform.system() == "Linux"
+        and platform.release().startswith("5.1")
+        and "Ubuntu" in platform.uname().version,
+        reason="Test not supported on Ubuntu 20",
+    )
+    def test_strings_scanner_unicode(self):
+        test_file = self.get_test_loc("fdisk.c")
+        result_file = self.get_temp_file("json")
+        args = ["--source-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("fdisk.c-expected.json", must_exist=False)
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
