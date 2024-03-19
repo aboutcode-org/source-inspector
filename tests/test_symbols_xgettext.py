@@ -9,7 +9,9 @@
 #
 
 import os
+import platform
 
+import pytest
 from commoncode.testcase import FileBasedTesting
 from scancode.cli_test_utils import check_json_scan
 from scancode.cli_test_utils import run_scan_click
@@ -233,6 +235,12 @@ msgstr ""
         expected_loc = self.get_test_loc("lineedit.c-expected.json", must_exist=False)
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
+    @pytest.mark.skipif(
+        platform.system() == "Linux"
+        and platform.release().startswith("5.1")
+        and "Ubuntu" in platform.uname().version,
+        reason="Test not supported on Ubuntu 20",
+    )
     def test_strings_scanner_unicode(self):
         test_file = self.get_test_loc("fdisk.c")
         result_file = self.get_temp_file("json")
