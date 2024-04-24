@@ -1,0 +1,86 @@
+{
+  "files": [
+    {
+      "path": "test3.cpp",
+      "type": "file",
+      "pygments_symbols": [
+        {
+          "position": 407,
+          "token_type": "symbol",
+          "token_value": "string_length"
+        },
+        {
+          "position": 485,
+          "token_type": "symbol",
+          "token_value": "string_copy"
+        },
+        {
+          "position": 663,
+          "token_type": "symbol",
+          "token_value": "string_free"
+        },
+        {
+          "position": 736,
+          "token_type": "symbol",
+          "token_value": "libmap"
+        },
+        {
+          "position": 874,
+          "token_type": "symbol",
+          "token_value": "readmaps"
+        },
+        {
+          "position": 2263,
+          "token_type": "symbol",
+          "token_value": "addr2line_obj_dump"
+        },
+        {
+          "position": 2292,
+          "token_type": "symbol",
+          "token_value": "pcset"
+        },
+        {
+          "position": 2316,
+          "token_type": "symbol",
+          "token_value": "pcset"
+        },
+        {
+          "position": 2339,
+          "token_type": "symbol",
+          "token_value": "pcset"
+        },
+        {
+          "position": 4391,
+          "token_type": "symbol",
+          "token_value": "stacktrace_dump"
+        },
+        {
+          "position": 4501,
+          "token_type": "symbol",
+          "token_value": "pcset"
+        },
+        {
+          "position": 5263,
+          "token_type": "symbol",
+          "token_value": "stacktrace_close"
+        },
+        {
+          "position": 9300,
+          "token_type": "symbol",
+          "token_value": "stacktrace_get"
+        },
+        {
+          "position": 9628,
+          "token_type": "symbol",
+          "token_value": "pcset"
+        },
+        {
+          "position": 9695,
+          "token_type": "symbol",
+          "token_value": "pcset"
+        }
+      ],
+      "scan_errors": []
+    }
+  ]
+}

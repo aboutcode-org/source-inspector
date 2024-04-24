@@ -1,0 +1,4806 @@
+{
+  "files": [
+    {
+      "path": "if_ath.c",
+      "type": "file",
+      "pygments_symbols": [
+        {
+          "position": 3927,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 3963,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 4017,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 4045,
+          "token_type": "symbol",
+          "token_value": "ath_vap_delete"
+        },
+        {
+          "position": 4067,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 4096,
+          "token_type": "symbol",
+          "token_value": "ath_init"
+        },
+        {
+          "position": 4112,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 4139,
+          "token_type": "symbol",
+          "token_value": "ath_set_ack_bitrate"
+        },
+        {
+          "position": 4166,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 4197,
+          "token_type": "symbol",
+          "token_value": "ath_reset"
+        },
+        {
+          "position": 4214,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 4242,
+          "token_type": "symbol",
+          "token_value": "ath_fatal_tasklet"
+        },
+        {
+          "position": 4286,
+          "token_type": "symbol",
+          "token_value": "ath_rxorn_tasklet"
+        },
+        {
+          "position": 4330,
+          "token_type": "symbol",
+          "token_value": "ath_bmiss_tasklet"
+        },
+        {
+          "position": 4374,
+          "token_type": "symbol",
+          "token_value": "ath_bstuck_tasklet"
+        },
+        {
+          "position": 4419,
+          "token_type": "symbol",
+          "token_value": "ath_radar_task"
+        },
+        {
+          "position": 4441,
+          "token_type": "symbol",
+          "token_value": "work_struct"
+        },
+        {
+          "position": 4470,
+          "token_type": "symbol",
+          "token_value": "ath_dfs_test_return"
+        },
+        {
+          "position": 4520,
+          "token_type": "symbol",
+          "token_value": "ath_stop_locked"
+        },
+        {
+          "position": 4543,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 4570,
+          "token_type": "symbol",
+          "token_value": "ath_stop"
+        },
+        {
+          "position": 4586,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 4679,
+          "token_type": "symbol",
+          "token_value": "ath_key_alloc"
+        },
+        {
+          "position": 4700,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 4729,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 4759,
+          "token_type": "symbol",
+          "token_value": "ath_key_delete"
+        },
+        {
+          "position": 4781,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 4810,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 4836,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 4867,
+          "token_type": "symbol",
+          "token_value": "ath_key_set"
+        },
+        {
+          "position": 4886,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 4915,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 4988,
+          "token_type": "symbol",
+          "token_value": "ath_key_update_begin"
+        },
+        {
+          "position": 5016,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 5046,
+          "token_type": "symbol",
+          "token_value": "ath_key_update_end"
+        },
+        {
+          "position": 5072,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 5102,
+          "token_type": "symbol",
+          "token_value": "ath_mode_init"
+        },
+        {
+          "position": 5123,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 5151,
+          "token_type": "symbol",
+          "token_value": "ath_setslottime"
+        },
+        {
+          "position": 5174,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5201,
+          "token_type": "symbol",
+          "token_value": "ath_updateslot"
+        },
+        {
+          "position": 5223,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 5250,
+          "token_type": "symbol",
+          "token_value": "ath_beaconq_setup"
+        },
+        {
+          "position": 5275,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 5299,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_alloc"
+        },
+        {
+          "position": 5323,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5343,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 5403,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_dturbo_update"
+        },
+        {
+          "position": 5435,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 5482,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_dturbo_config"
+        },
+        {
+          "position": 5514,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 5555,
+          "token_type": "symbol",
+          "token_value": "ath_turbo_switch_mode"
+        },
+        {
+          "position": 5605,
+          "token_type": "symbol",
+          "token_value": "ath_check_beacon_done"
+        },
+        {
+          "position": 5634,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5669,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_send"
+        },
+        {
+          "position": 5692,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5726,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_start_adhoc"
+        },
+        {
+          "position": 5756,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5776,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 5806,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_return"
+        },
+        {
+          "position": 5831,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5851,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 5876,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_free"
+        },
+        {
+          "position": 5899,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5926,
+          "token_type": "symbol",
+          "token_value": "ath_beacon_config"
+        },
+        {
+          "position": 5951,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 5971,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 6000,
+          "token_type": "symbol",
+          "token_value": "ath_desc_alloc"
+        },
+        {
+          "position": 6022,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 6049,
+          "token_type": "symbol",
+          "token_value": "ath_desc_free"
+        },
+        {
+          "position": 6070,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 6097,
+          "token_type": "symbol",
+          "token_value": "ath_desc_swap"
+        },
+        {
+          "position": 6118,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 6146,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 6184,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node_table"
+        },
+        {
+          "position": 6217,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 6247,
+          "token_type": "symbol",
+          "token_value": "ath_node_cleanup"
+        },
+        {
+          "position": 6271,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 6303,
+          "token_type": "symbol",
+          "token_value": "ath_node_free"
+        },
+        {
+          "position": 6324,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 6360,
+          "token_type": "symbol",
+          "token_value": "ath_node_getrssi"
+        },
+        {
+          "position": 6390,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 6421,
+          "token_type": "symbol",
+          "token_value": "ath_rxbuf_init"
+        },
+        {
+          "position": 6443,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 6463,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 6488,
+          "token_type": "symbol",
+          "token_value": "ath_recv_mgmt"
+        },
+        {
+          "position": 6509,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 6534,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 6582,
+          "token_type": "symbol",
+          "token_value": "ath_setdefantenna"
+        },
+        {
+          "position": 6607,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 6643,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 6673,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 6710,
+          "token_type": "symbol",
+          "token_value": "ath_rx_tasklet"
+        },
+        {
+          "position": 6750,
+          "token_type": "symbol",
+          "token_value": "ath_hardstart"
+        },
+        {
+          "position": 6771,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 6789,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 6816,
+          "token_type": "symbol",
+          "token_value": "ath_mgtstart"
+        },
+        {
+          "position": 6836,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 6859,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 6913,
+          "token_type": "symbol",
+          "token_value": "ath_get_icvlen"
+        },
+        {
+          "position": 6935,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 6971,
+          "token_type": "symbol",
+          "token_value": "ath_get_ivlen"
+        },
+        {
+          "position": 6992,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 7023,
+          "token_type": "symbol",
+          "token_value": "ath_setup_comp"
+        },
+        {
+          "position": 7045,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 7082,
+          "token_type": "symbol",
+          "token_value": "ath_comp_set"
+        },
+        {
+          "position": 7102,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 7125,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 7170,
+          "token_type": "symbol",
+          "token_value": "ath_tx_setup"
+        },
+        {
+          "position": 7190,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 7226,
+          "token_type": "symbol",
+          "token_value": "ath_wme_update"
+        },
+        {
+          "position": 7248,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 7278,
+          "token_type": "symbol",
+          "token_value": "ath_uapsd_flush"
+        },
+        {
+          "position": 7301,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 7333,
+          "token_type": "symbol",
+          "token_value": "ath_tx_cleanupq"
+        },
+        {
+          "position": 7356,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 7376,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 7401,
+          "token_type": "symbol",
+          "token_value": "ath_tx_cleanup"
+        },
+        {
+          "position": 7423,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 7450,
+          "token_type": "symbol",
+          "token_value": "ath_tx_uapsdqueue"
+        },
+        {
+          "position": 7475,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 7495,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 7516,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 7542,
+          "token_type": "symbol",
+          "token_value": "ath_tx_start"
+        },
+        {
+          "position": 7562,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 7583,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 7610,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 7628,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 7658,
+          "token_type": "symbol",
+          "token_value": "ath_tx_tasklet_q0"
+        },
+        {
+          "position": 7702,
+          "token_type": "symbol",
+          "token_value": "ath_tx_tasklet_q0123"
+        },
+        {
+          "position": 7749,
+          "token_type": "symbol",
+          "token_value": "ath_tx_tasklet"
+        },
+        {
+          "position": 7790,
+          "token_type": "symbol",
+          "token_value": "ath_tx_timeout"
+        },
+        {
+          "position": 7812,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 7840,
+          "token_type": "symbol",
+          "token_value": "ath_tx_draintxq"
+        },
+        {
+          "position": 7863,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 7883,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 7907,
+          "token_type": "symbol",
+          "token_value": "ath_chan_set"
+        },
+        {
+          "position": 7927,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 7947,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 7982,
+          "token_type": "symbol",
+          "token_value": "ath_draintxq"
+        },
+        {
+          "position": 8002,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8038,
+          "token_type": "symbol",
+          "token_value": "ath_tx_txqaddbuf"
+        },
+        {
+          "position": 8062,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8082,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 8109,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 8127,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 8145,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 8176,
+          "token_type": "symbol",
+          "token_value": "ath_stoprecv"
+        },
+        {
+          "position": 8196,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8222,
+          "token_type": "symbol",
+          "token_value": "ath_startrecv"
+        },
+        {
+          "position": 8243,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8270,
+          "token_type": "symbol",
+          "token_value": "ath_flushrecv"
+        },
+        {
+          "position": 8291,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8318,
+          "token_type": "symbol",
+          "token_value": "ath_chan_change"
+        },
+        {
+          "position": 8341,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8361,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 8396,
+          "token_type": "symbol",
+          "token_value": "ath_calibrate"
+        },
+        {
+          "position": 8438,
+          "token_type": "symbol",
+          "token_value": "ath_newstate"
+        },
+        {
+          "position": 8458,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 8517,
+          "token_type": "symbol",
+          "token_value": "ath_scan_start"
+        },
+        {
+          "position": 8539,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 8569,
+          "token_type": "symbol",
+          "token_value": "ath_scan_end"
+        },
+        {
+          "position": 8589,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 8619,
+          "token_type": "symbol",
+          "token_value": "ath_set_channel"
+        },
+        {
+          "position": 8642,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 8672,
+          "token_type": "symbol",
+          "token_value": "ath_set_coverageclass"
+        },
+        {
+          "position": 8701,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 8732,
+          "token_type": "symbol",
+          "token_value": "ath_mhz2ieee"
+        },
+        {
+          "position": 8752,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 8817,
+          "token_type": "symbol",
+          "token_value": "athff_can_aggregate"
+        },
+        {
+          "position": 8844,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 8864,
+          "token_type": "symbol",
+          "token_value": "ether_header"
+        },
+        {
+          "position": 8889,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 8908,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 8961,
+          "token_type": "symbol",
+          "token_value": "net_device_stats"
+        },
+        {
+          "position": 8999,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9027,
+          "token_type": "symbol",
+          "token_value": "ath_setup_stationkey"
+        },
+        {
+          "position": 9055,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 9087,
+          "token_type": "symbol",
+          "token_value": "ath_setup_stationwepkey"
+        },
+        {
+          "position": 9118,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 9150,
+          "token_type": "symbol",
+          "token_value": "ath_setup_keycacheslot"
+        },
+        {
+          "position": 9180,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 9200,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 9232,
+          "token_type": "symbol",
+          "token_value": "ath_newassoc"
+        },
+        {
+          "position": 9252,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 9288,
+          "token_type": "symbol",
+          "token_value": "ath_getchannels"
+        },
+        {
+          "position": 9311,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9366,
+          "token_type": "symbol",
+          "token_value": "ath_led_event"
+        },
+        {
+          "position": 9387,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 9419,
+          "token_type": "symbol",
+          "token_value": "ath_update_txpow"
+        },
+        {
+          "position": 9443,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 9471,
+          "token_type": "symbol",
+          "token_value": "ath_set_mac_address"
+        },
+        {
+          "position": 9498,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9533,
+          "token_type": "symbol",
+          "token_value": "ath_change_mtu"
+        },
+        {
+          "position": 9555,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9587,
+          "token_type": "symbol",
+          "token_value": "ath_ioctl"
+        },
+        {
+          "position": 9604,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9625,
+          "token_type": "symbol",
+          "token_value": "ifreq"
+        },
+        {
+          "position": 9654,
+          "token_type": "symbol",
+          "token_value": "ath_rate_setup"
+        },
+        {
+          "position": 9676,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9711,
+          "token_type": "symbol",
+          "token_value": "ath_setup_subrates"
+        },
+        {
+          "position": 9737,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9786,
+          "token_type": "symbol",
+          "token_value": "ath_xr_rate_setup"
+        },
+        {
+          "position": 9811,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 9839,
+          "token_type": "symbol",
+          "token_value": "ath_grppoll_txq_setup"
+        },
+        {
+          "position": 9868,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 9905,
+          "token_type": "symbol",
+          "token_value": "ath_grppoll_start"
+        },
+        {
+          "position": 9930,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 9965,
+          "token_type": "symbol",
+          "token_value": "ath_grppoll_stop"
+        },
+        {
+          "position": 9989,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 10023,
+          "token_type": "symbol",
+          "token_value": "ath_node_move_data"
+        },
+        {
+          "position": 10055,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 10087,
+          "token_type": "symbol",
+          "token_value": "ath_grppoll_txq_update"
+        },
+        {
+          "position": 10117,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10149,
+          "token_type": "symbol",
+          "token_value": "ath_grppoll_period_update"
+        },
+        {
+          "position": 10182,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10217,
+          "token_type": "symbol",
+          "token_value": "ath_setcurmode"
+        },
+        {
+          "position": 10239,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10292,
+          "token_type": "symbol",
+          "token_value": "ath_dynamic_sysctl_register"
+        },
+        {
+          "position": 10327,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10354,
+          "token_type": "symbol",
+          "token_value": "ath_dynamic_sysctl_unregister"
+        },
+        {
+          "position": 10391,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10418,
+          "token_type": "symbol",
+          "token_value": "ath_announce"
+        },
+        {
+          "position": 10438,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 10465,
+          "token_type": "symbol",
+          "token_value": "ath_descdma_setup"
+        },
+        {
+          "position": 10490,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10510,
+          "token_type": "symbol",
+          "token_value": "ath_descdma"
+        },
+        {
+          "position": 10580,
+          "token_type": "symbol",
+          "token_value": "ath_descdma_cleanup"
+        },
+        {
+          "position": 10607,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 10627,
+          "token_type": "symbol",
+          "token_value": "ath_descdma"
+        },
+        {
+          "position": 10678,
+          "token_type": "symbol",
+          "token_value": "ath_check_dfs_clear"
+        },
+        {
+          "position": 10734,
+          "token_type": "symbol",
+          "token_value": "ath_get_hal_status_desc"
+        },
+        {
+          "position": 10790,
+          "token_type": "symbol",
+          "token_value": "ath_rcv_dev_event"
+        },
+        {
+          "position": 10815,
+          "token_type": "symbol",
+          "token_value": "notifier_block"
+        },
+        {
+          "position": 12080,
+          "token_type": "symbol",
+          "token_value": "notifier_block"
+        },
+        {
+          "position": 13585,
+          "token_type": "symbol",
+          "token_value": "ath_printrxbuf"
+        },
+        {
+          "position": 13607,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 13637,
+          "token_type": "symbol",
+          "token_value": "ath_printtxbuf"
+        },
+        {
+          "position": 13659,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 16603,
+          "token_type": "symbol",
+          "token_value": "ath_attach"
+        },
+        {
+          "position": 16638,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 16684,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 16720,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 16760,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 17111,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 17193,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 25809,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 25850,
+          "token_type": "symbol",
+          "token_value": "llc"
+        },
+        {
+          "position": 33608,
+          "token_type": "symbol",
+          "token_value": "ath_detach"
+        },
+        {
+          "position": 33626,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 33655,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 33691,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 35116,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 35154,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 35232,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 35262,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 35305,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 35339,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 35365,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 35388,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 35721,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_STA"
+        },
+        {
+          "position": 36176,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_IBSS"
+        },
+        {
+          "position": 36293,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_AHDEMO"
+        },
+        {
+          "position": 36320,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_MONITOR"
+        },
+        {
+          "position": 36511,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_HOSTAP"
+        },
+        {
+          "position": 36538,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_WDS"
+        },
+        {
+          "position": 37236,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 38240,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 42369,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 42400,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 42447,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 42483,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 42517,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 45407,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 45436,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 45582,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 45611,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 45779,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 45806,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 45840,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 45862,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 45885,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 45908,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 45937,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 45960,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 45994,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 46042,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 48352,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 48420,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 53167,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 53246,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 53298,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 53333,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 54986,
+          "token_type": "symbol",
+          "token_value": "pt_regs"
+        },
+        {
+          "position": 55021,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 55056,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 55092,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 58978,
+          "token_type": "symbol",
+          "token_value": "work_struct"
+        },
+        {
+          "position": 59008,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 59049,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 59084,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 59118,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 59158,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 60251,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 60275,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 60303,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 60482,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 60508,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 60669,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 60695,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 60857,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 60883,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 60911,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 61327,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 61988,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 62017,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 62053,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 62093,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 65892,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 65921,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 65957,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 65997,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 67695,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 67724,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 68519,
+          "token_type": "symbol",
+          "token_value": "AR5210_DEFAULT"
+        },
+        {
+          "position": 68542,
+          "token_type": "symbol",
+          "token_value": "AR5210_PROD"
+        },
+        {
+          "position": 68562,
+          "token_type": "symbol",
+          "token_value": "AR5210_AP"
+        },
+        {
+          "position": 68596,
+          "token_type": "symbol",
+          "token_value": "AR5211_DEFAULT"
+        },
+        {
+          "position": 68619,
+          "token_type": "symbol",
+          "token_value": "AR5311_DEVID"
+        },
+        {
+          "position": 68640,
+          "token_type": "symbol",
+          "token_value": "AR5211_LEGACY"
+        },
+        {
+          "position": 68662,
+          "token_type": "symbol",
+          "token_value": "AR5211_FPGA11B"
+        },
+        {
+          "position": 68701,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEFAULT"
+        },
+        {
+          "position": 68724,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID"
+        },
+        {
+          "position": 68745,
+          "token_type": "symbol",
+          "token_value": "AR5212_FPGA"
+        },
+        {
+          "position": 68765,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_IBM"
+        },
+        {
+          "position": 68790,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR5312_REV2"
+        },
+        {
+          "position": 68817,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR5312_REV7"
+        },
+        {
+          "position": 68844,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR2313_REV8"
+        },
+        {
+          "position": 68871,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR2315_REV6"
+        },
+        {
+          "position": 68898,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR2315_REV7"
+        },
+        {
+          "position": 68925,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR2317_REV1"
+        },
+        {
+          "position": 68952,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_0014"
+        },
+        {
+          "position": 68978,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_0015"
+        },
+        {
+          "position": 69004,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_0016"
+        },
+        {
+          "position": 69030,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_0017"
+        },
+        {
+          "position": 69056,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_0018"
+        },
+        {
+          "position": 69082,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_0019"
+        },
+        {
+          "position": 69108,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR2413"
+        },
+        {
+          "position": 69130,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR5413"
+        },
+        {
+          "position": 69152,
+          "token_type": "symbol",
+          "token_value": "AR5212_AR5424"
+        },
+        {
+          "position": 69174,
+          "token_type": "symbol",
+          "token_value": "AR5212_DEVID_FF19"
+        },
+        {
+          "position": 69216,
+          "token_type": "symbol",
+          "token_value": "AR5213_SREV_1_0"
+        },
+        {
+          "position": 69240,
+          "token_type": "symbol",
+          "token_value": "AR5213_SREV_REG"
+        },
+        {
+          "position": 69264,
+          "token_type": "symbol",
+          "token_value": "AR_SUBVENDOR_ID_NOG"
+        },
+        {
+          "position": 69292,
+          "token_type": "symbol",
+          "token_value": "AR_SUBVENDOR_ID_NEW_A"
+        },
+        {
+          "position": 69422,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 69460,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 70499,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 70528,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 70564,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 70604,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 70638,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 72321,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 72710,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 73113,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 73135,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 73165,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 73186,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 73209,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 73253,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 75077,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 75361,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 75385,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 75405,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 75432,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 75468,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 75502,
+          "token_type": "symbol",
+          "token_value": "ieee80211_phy_params"
+        },
+        {
+          "position": 75537,
+          "token_type": "symbol",
+          "token_value": "ieee80211_phy_params"
+        },
+        {
+          "position": 75586,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cb"
+        },
+        {
+          "position": 75770,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 75798,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 75826,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 75866,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 78671,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 78692,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 78769,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 78790,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 79037,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 79059,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 79110,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 79131,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 79157,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 79189,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 81502,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 81523,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 81552,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 81588,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 81624,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 81653,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cb"
+        },
+        {
+          "position": 81680,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cb"
+        },
+        {
+          "position": 81714,
+          "token_type": "symbol",
+          "token_value": "ether_header"
+        },
+        {
+          "position": 81786,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 81818,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 81842,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 81941,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 81981,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 82004,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 82502,
+          "token_type": "symbol",
+          "token_value": "ether_header"
+        },
+        {
+          "position": 85108,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 89777,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 89802,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 89828,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 89867,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 89903,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 89939,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 89968,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cb"
+        },
+        {
+          "position": 91057,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cb"
+        },
+        {
+          "position": 91572,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 92554,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 92582,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 92793,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 94554,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 94582,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 94652,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 95119,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 95159,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cipher"
+        },
+        {
+          "position": 96580,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 97991,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 99020,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 100088,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 100120,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 100150,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 100197,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 102186,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 102218,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 102248,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 102283,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 102330,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 102366,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 102406,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cipher"
+        },
+        {
+          "position": 102453,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 104390,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 104422,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 104494,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 104541,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 104898,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 104929,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 104976,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 105461,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 105492,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 105539,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 106537,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 106640,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 106680,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 106719,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 107738,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 107785,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 107825,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 107853,
+          "token_type": "symbol",
+          "token_value": "dev_mc_list"
+        },
+        {
+          "position": 108008,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 108432,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 108461,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 108497,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 109247,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 109274,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 109314,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 109756,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 109785,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 109821,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 110413,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 110595,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 110635,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 112126,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 112186,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 112226,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 115808,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 115835,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 115868,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 115891,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 115913,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 115936,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 115959,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 116576,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 116602,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 116630,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 116666,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 117905,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 118315,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 118387,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 118427,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 118711,
+          "token_type": "symbol",
+          "token_value": "wmeParams"
+        },
+        {
+          "position": 119422,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 119444,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 119476,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 119521,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 119551,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 119573,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 121499,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 121842,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 121864,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 122023,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 122066,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 122105,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 122141,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 122175,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 124183,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 125133,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 125171,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 125193,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 125239,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 125273,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 125295,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 125324,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 125347,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 127955,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 127994,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 128705,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 129287,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 129415,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 129449,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 129477,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 130873,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 134585,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 134611,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 134639,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 135238,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 135260,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 135291,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 135325,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 135347,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 135376,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 135399,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 136658,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 136680,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 137099,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 137126,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 138120,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 138142,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 138259,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 138299,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 138333,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 144328,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 144352,
+          "token_type": "symbol",
+          "token_value": "ath_descdma"
+        },
+        {
+          "position": 144540,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 144563,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 144763,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 145244,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 145825,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 145849,
+          "token_type": "symbol",
+          "token_value": "ath_descdma"
+        },
+        {
+          "position": 145906,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 145928,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 146731,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 147507,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 147895,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 147935,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node_table"
+        },
+        {
+          "position": 147967,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 147998,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 148076,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 148119,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 148962,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 148994,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 149033,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 149083,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 149121,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 150369,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 150401,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 150634,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 151438,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 151486,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 151517,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 151556,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 151599,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 151647,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 151681,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 151711,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 151818,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 155311,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 155355,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 155396,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 155427,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 156809,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 159977,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 160039,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 160286,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 160308,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 160333,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 160367,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 160390,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 160530,
+          "token_type": "symbol",
+          "token_value": "ath_rx_radiotap_header"
+        },
+        {
+          "position": 163172,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 163485,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 163509,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 163530,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 163556,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 163592,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 163632,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 163662,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 164209,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 164529,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 164553,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 164574,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 164600,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 164636,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 164676,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 164731,
+          "token_type": "symbol",
+          "token_value": "ath_tx_radiotap_header"
+        },
+        {
+          "position": 165489,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 165736,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 166473,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 166500,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 166569,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 166619,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 166861,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_FC0_SUBTYPE_BEACON"
+        },
+        {
+          "position": 167374,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_FC0_SUBTYPE_PROBE_RESP"
+        },
+        {
+          "position": 168439,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 168481,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 168900,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 168926,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 168954,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 168976,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 169012,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 169052,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 169086,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 169109,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 169132,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 172005,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 175058,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 175591,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame_min"
+        },
+        {
+          "position": 175660,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 177707,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 177734,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 179179,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 179218,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 179271,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 179825,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 179921,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 180060,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 181154,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 181228,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 181258,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 181294,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 181334,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 181377,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 181541,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 181581,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 181740,
+          "token_type": "symbol",
+          "token_value": "rate_to_str_map"
+        },
+        {
+          "position": 184392,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame_min"
+        },
+        {
+          "position": 185213,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 186572,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 188049,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 188080,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 188120,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 188163,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 188197,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 188237,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 189135,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 189167,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 189264,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 191780,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 192660,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 192754,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 193167,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 193189,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 193303,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 193343,
+          "token_type": "symbol",
+          "token_value": "wmeParams"
+        },
+        {
+          "position": 193416,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 194189,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 194219,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 194709,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 194741,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 194779,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 194801,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 194851,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 195854,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 195876,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 196329,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 196570,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 196606,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cipher"
+        },
+        {
+          "position": 196851,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 196887,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cipher"
+        },
+        {
+          "position": 197508,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 197530,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 197551,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 197576,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 200036,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 200060,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 200087,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 200107,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 200192,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 200228,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 200267,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 200308,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 200556,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 200586,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 200616,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 200759,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 200782,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 200864,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 201248,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 201490,
+          "token_type": "symbol",
+          "token_value": "ieee80211_cipher"
+        },
+        {
+          "position": 201523,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 202869,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 203711,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 205328,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_FC0_TYPE_MGT"
+        },
+        {
+          "position": 206067,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_FC0_TYPE_CTL"
+        },
+        {
+          "position": 206499,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_FC0_TYPE_DATA"
+        },
+        {
+          "position": 217100,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 217133,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 219519,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 219541,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 219567,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 219601,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 219630,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 219660,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 219696,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 223407,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 223441,
+          "token_type": "symbol",
+          "token_value": "ieee80211_qosframe"
+        },
+        {
+          "position": 224149,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 224179,
+          "token_type": "symbol",
+          "token_value": "ieee80211_frame"
+        },
+        {
+          "position": 224938,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 226499,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 226821,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 226847,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 226875,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 227349,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 227375,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 227403,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 228296,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 228322,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 228350,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 228832,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 228861,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 229273,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 229295,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 229321,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 229355,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 229377,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 229422,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 230576,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 230598,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 230624,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 230951,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 230978,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 231652,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 231813,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 232178,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 232346,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 232752,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 232779,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 232813,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 232852,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 233935,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 233962,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 234310,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 234332,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 234369,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 234409,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 235137,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 235159,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 235196,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 235230,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 235270,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 239193,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 239219,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 239247,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 239283,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 239317,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 240339,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 241034,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 241064,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 241103,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 241139,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 241541,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 241571,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 241610,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 241646,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 242029,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 242059,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 242098,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 242562,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 242593,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 242746,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 242801,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 242981,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 243050,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 243088,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 243128,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 243167,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 243203,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 243237,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 243323,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 245907,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_HOSTAP"
+        },
+        {
+          "position": 245935,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_IBSS"
+        },
+        {
+          "position": 247374,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_STA"
+        },
+        {
+          "position": 247874,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_M_WDS"
+        },
+        {
+          "position": 251026,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 251050,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 251078,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 251118,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 251157,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 251588,
+          "token_type": "symbol",
+          "token_value": "ath_vap"
+        },
+        {
+          "position": 252813,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 252839,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 252997,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 253109,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 253150,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 253201,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 254645,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 254677,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 254718,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 255775,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 255807,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 255848,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 255880,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 255911,
+          "token_type": "symbol",
+          "token_value": "ieee80211_key"
+        },
+        {
+          "position": 258736,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 258758,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 258790,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 259696,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 259739,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 259778,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 259819,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 260362,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 260622,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 260701,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 260737,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 260777,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 261569,
+          "token_type": "symbol",
+          "token_value": "ieee80211_channel"
+        },
+        {
+          "position": 262051,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 262075,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 262302,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 262326,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 262641,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 263007,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 263188,
+          "token_type": "symbol",
+          "token_value": "ATH_LED_POLL"
+        },
+        {
+          "position": 263292,
+          "token_type": "symbol",
+          "token_value": "ATH_LED_TX"
+        },
+        {
+          "position": 263418,
+          "token_type": "symbol",
+          "token_value": "ATH_LED_RX"
+        },
+        {
+          "position": 263595,
+          "token_type": "symbol",
+          "token_value": "ieee80211_node"
+        },
+        {
+          "position": 263800,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 263827,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 263867,
+          "token_type": "symbol",
+          "token_value": "ieee80211vap"
+        },
+        {
+          "position": 263902,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 265363,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 265392,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 265428,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 265462,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 265530,
+          "token_type": "symbol",
+          "token_value": "ieee80211_rateset"
+        },
+        {
+          "position": 266176,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 266205,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 266241,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 266275,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 266343,
+          "token_type": "symbol",
+          "token_value": "ieee80211_rateset"
+        },
+        {
+          "position": 267495,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 267536,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 267572,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 267606,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 267674,
+          "token_type": "symbol",
+          "token_value": "ieee80211_rateset"
+        },
+        {
+          "position": 267743,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_MODE_11A"
+        },
+        {
+          "position": 267844,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_MODE_11B"
+        },
+        {
+          "position": 267945,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_MODE_11G"
+        },
+        {
+          "position": 268046,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_MODE_TURBO_A"
+        },
+        {
+          "position": 268153,
+          "token_type": "symbol",
+          "token_value": "IEEE80211_MODE_TURBO_G"
+        },
+        {
+          "position": 268856,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 271096,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 271118,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 271139,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 272324,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 272346,
+          "token_type": "symbol",
+          "token_value": "ether_header"
+        },
+        {
+          "position": 272378,
+          "token_type": "symbol",
+          "token_value": "ath_node"
+        },
+        {
+          "position": 272399,
+          "token_type": "symbol",
+          "token_value": "sk_buff"
+        },
+        {
+          "position": 272463,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 272503,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 272555,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 273909,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 273944,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 274268,
+          "token_type": "symbol",
+          "token_value": "ath_buf"
+        },
+        {
+          "position": 274303,
+          "token_type": "symbol",
+          "token_value": "ath_desc"
+        },
+        {
+          "position": 274709,
+          "token_type": "symbol",
+          "token_value": "net_device_stats"
+        },
+        {
+          "position": 274749,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 274778,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 274814,
+          "token_type": "symbol",
+          "token_value": "net_device_stats"
+        },
+        {
+          "position": 275464,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 275505,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 275541,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 275581,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 275615,
+          "token_type": "symbol",
+          "token_value": "sockaddr"
+        },
+        {
+          "position": 276346,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 276384,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 277246,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 277268,
+          "token_type": "symbol",
+          "token_value": "ath_diag"
+        },
+        {
+          "position": 277294,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 278676,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 278700,
+          "token_type": "symbol",
+          "token_value": "ifreq"
+        },
+        {
+          "position": 278733,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 278769,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 278855,
+          "token_type": "symbol",
+          "token_value": "SIOCGATHSTATS"
+        },
+        {
+          "position": 279180,
+          "token_type": "symbol",
+          "token_value": "SIOCGATHDIAG"
+        },
+        {
+          "position": 279293,
+          "token_type": "symbol",
+          "token_value": "ath_diag"
+        },
+        {
+          "position": 279328,
+          "token_type": "symbol",
+          "token_value": "SIOCETHTOOL"
+        },
+        {
+          "position": 279499,
+          "token_type": "symbol",
+          "token_value": "SIOC80211IFCREATE"
+        },
+        {
+          "position": 280758,
+          "token_type": "symbol",
+          "token_value": "ATH_SYSCTL_DECL"
+        },
+        {
+          "position": 280845,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 280883,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 281132,
+          "token_type": "symbol",
+          "token_value": "ATH_SLOTTIME"
+        },
+        {
+          "position": 281410,
+          "token_type": "symbol",
+          "token_value": "ATH_ACKTIMEOUT"
+        },
+        {
+          "position": 281510,
+          "token_type": "symbol",
+          "token_value": "ATH_CTSTIMEOUT"
+        },
+        {
+          "position": 281610,
+          "token_type": "symbol",
+          "token_value": "ATH_SOFTLED"
+        },
+        {
+          "position": 281833,
+          "token_type": "symbol",
+          "token_value": "ATH_LEDPIN"
+        },
+        {
+          "position": 281917,
+          "token_type": "symbol",
+          "token_value": "ATH_DEBUG"
+        },
+        {
+          "position": 281974,
+          "token_type": "symbol",
+          "token_value": "ATH_TXANTENNA"
+        },
+        {
+          "position": 282227,
+          "token_type": "symbol",
+          "token_value": "ATH_RXANTENNA"
+        },
+        {
+          "position": 282483,
+          "token_type": "symbol",
+          "token_value": "ATH_DIVERSITY"
+        },
+        {
+          "position": 282866,
+          "token_type": "symbol",
+          "token_value": "ATH_TXINTRPERIOD"
+        },
+        {
+          "position": 282963,
+          "token_type": "symbol",
+          "token_value": "ATH_FFTXQMIN"
+        },
+        {
+          "position": 283051,
+          "token_type": "symbol",
+          "token_value": "ATH_TKIPMIC"
+        },
+        {
+          "position": 283078,
+          "token_type": "symbol",
+          "token_value": "ieee80211com"
+        },
+        {
+          "position": 283359,
+          "token_type": "symbol",
+          "token_value": "ATH_XR_POLL_PERIOD"
+        },
+        {
+          "position": 283579,
+          "token_type": "symbol",
+          "token_value": "ATH_XR_POLL_COUNT"
+        },
+        {
+          "position": 283794,
+          "token_type": "symbol",
+          "token_value": "ATH_ACKRATE"
+        },
+        {
+          "position": 283901,
+          "token_type": "symbol",
+          "token_value": "ATH_INTMIT"
+        },
+        {
+          "position": 284221,
+          "token_type": "symbol",
+          "token_value": "ATH_SLOTTIME"
+        },
+        {
+          "position": 284289,
+          "token_type": "symbol",
+          "token_value": "ATH_ACKTIMEOUT"
+        },
+        {
+          "position": 284361,
+          "token_type": "symbol",
+          "token_value": "ATH_CTSTIMEOUT"
+        },
+        {
+          "position": 284433,
+          "token_type": "symbol",
+          "token_value": "ATH_SOFTLED"
+        },
+        {
+          "position": 284491,
+          "token_type": "symbol",
+          "token_value": "ATH_LEDPIN"
+        },
+        {
+          "position": 284547,
+          "token_type": "symbol",
+          "token_value": "ATH_COUNTRYCODE"
+        },
+        {
+          "position": 284621,
+          "token_type": "symbol",
+          "token_value": "ATH_MAXVAPS"
+        },
+        {
+          "position": 284676,
+          "token_type": "symbol",
+          "token_value": "ATH_REGDOMAIN"
+        },
+        {
+          "position": 284746,
+          "token_type": "symbol",
+          "token_value": "ATH_DEBUG"
+        },
+        {
+          "position": 284800,
+          "token_type": "symbol",
+          "token_value": "ATH_TXANTENNA"
+        },
+        {
+          "position": 284862,
+          "token_type": "symbol",
+          "token_value": "ATH_RXANTENNA"
+        },
+        {
+          "position": 284933,
+          "token_type": "symbol",
+          "token_value": "ATH_DIVERSITY"
+        },
+        {
+          "position": 284995,
+          "token_type": "symbol",
+          "token_value": "ATH_TXINTRPERIOD"
+        },
+        {
+          "position": 285063,
+          "token_type": "symbol",
+          "token_value": "ATH_FFTXQMIN"
+        },
+        {
+          "position": 285123,
+          "token_type": "symbol",
+          "token_value": "ATH_TKIPMIC"
+        },
+        {
+          "position": 285211,
+          "token_type": "symbol",
+          "token_value": "ATH_XR_POLL_PERIOD"
+        },
+        {
+          "position": 285277,
+          "token_type": "symbol",
+          "token_value": "ATH_XR_POLL_COUNT"
+        },
+        {
+          "position": 285352,
+          "token_type": "symbol",
+          "token_value": "ATH_ACKRATE"
+        },
+        {
+          "position": 285410,
+          "token_type": "symbol",
+          "token_value": "ATH_INTMIT"
+        },
+        {
+          "position": 288803,
+          "token_type": "symbol",
+          "token_value": "ath_dynamic_sysctl_register"
+        },
+        {
+          "position": 288838,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 288928,
+          "token_type": "symbol",
+          "token_value": "ctl_table"
+        },
+        {
+          "position": 290856,
+          "token_type": "symbol",
+          "token_value": "ath_dynamic_sysctl_unregister"
+        },
+        {
+          "position": 290893,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 291327,
+          "token_type": "symbol",
+          "token_value": "ath_announce"
+        },
+        {
+          "position": 291347,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 291431,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 291467,
+          "token_type": "symbol",
+          "token_value": "ath_hal"
+        },
+        {
+          "position": 292498,
+          "token_type": "symbol",
+          "token_value": "ath_txq"
+        },
+        {
+          "position": 294497,
+          "token_type": "symbol",
+          "token_value": "ctl_table_header"
+        },
+        {
+          "position": 294543,
+          "token_type": "symbol",
+          "token_value": "ath_sysctl_register"
+        },
+        {
+          "position": 294785,
+          "token_type": "symbol",
+          "token_value": "ath_sysctl_unregister"
+        },
+        {
+          "position": 294966,
+          "token_type": "symbol",
+          "token_value": "ath_get_hal_status_desc"
+        },
+        {
+          "position": 295155,
+          "token_type": "symbol",
+          "token_value": "ath_rcv_dev_event"
+        },
+        {
+          "position": 295180,
+          "token_type": "symbol",
+          "token_value": "notifier_block"
+        },
+        {
+          "position": 295248,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 295274,
+          "token_type": "symbol",
+          "token_value": "net_device"
+        },
+        {
+          "position": 295302,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 295326,
+          "token_type": "symbol",
+          "token_value": "ath_softc"
+        },
+        {
+          "position": 295452,
+          "token_type": "symbol",
+          "token_value": "NETDEV_CHANGENAME"
+        }
+      ],
+      "scan_errors": []
+    }
+  ]
+}
