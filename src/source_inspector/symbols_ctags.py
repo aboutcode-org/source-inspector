@@ -44,6 +44,7 @@ class CtagsSymbolScannerPlugin(ScanPlugin):
             help="Collect source symbols using Universal ctags.",
             help_group=SCAN_GROUP,
             sort_order=100,
+            conflicting_options=["treesitter_symbol_and_string", "pygments_symbol_and_string"],
         ),
     ]
 
