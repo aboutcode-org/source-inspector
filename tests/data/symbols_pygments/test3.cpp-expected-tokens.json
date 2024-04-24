@@ -1,0 +1,1607 @@
+[
+  {
+    "position": 2,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 3,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 11,
+    "token_type": "comment",
+    "token_value": "\"stacktrace.h\""
+  },
+  {
+    "position": 29,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 30,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 38,
+    "token_type": "comment",
+    "token_value": "<string.h>"
+  },
+  {
+    "position": 50,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 51,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 59,
+    "token_type": "comment",
+    "token_value": "<stdio.h>"
+  },
+  {
+    "position": 70,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 71,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 79,
+    "token_type": "comment",
+    "token_value": "<unistd.h>"
+  },
+  {
+    "position": 91,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 92,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 100,
+    "token_type": "comment",
+    "token_value": "<stdlib.h>"
+  },
+  {
+    "position": 112,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 113,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 121,
+    "token_type": "comment",
+    "token_value": "<sys/types.h>"
+  },
+  {
+    "position": 136,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 137,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 145,
+    "token_type": "comment",
+    "token_value": "<signal.h>"
+  },
+  {
+    "position": 157,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 158,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 166,
+    "token_type": "comment",
+    "token_value": "<sys/wait.h>"
+  },
+  {
+    "position": 182,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 183,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 191,
+    "token_type": "comment",
+    "token_value": "<execinfo.h>"
+  },
+  {
+    "position": 207,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 208,
+    "token_type": "comment",
+    "token_value": "include"
+  },
+  {
+    "position": 216,
+    "token_type": "comment",
+    "token_value": "\"lhn_defines.h\""
+  },
+  {
+    "position": 265,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 266,
+    "token_type": "comment",
+    "token_value": "ifndef __PRIPTR_PREFIX"
+  },
+  {
+    "position": 290,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 291,
+    "token_type": "comment",
+    "token_value": "if __WORDSIZE == 64"
+  },
+  {
+    "position": 313,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 314,
+    "token_type": "comment",
+    "token_value": "define __PRIPTR_PREFIX\t\"l\""
+  },
+  {
+    "position": 344,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 345,
+    "token_type": "comment",
+    "token_value": "else"
+  },
+  {
+    "position": 352,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 353,
+    "token_type": "comment",
+    "token_value": "define __PRIPTR_PREFIX"
+  },
+  {
+    "position": 379,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 380,
+    "token_type": "comment",
+    "token_value": "endif"
+  },
+  {
+    "position": 388,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 389,
+    "token_type": "comment",
+    "token_value": "endif"
+  },
+  {
+    "position": 407,
+    "token_type": "symbol",
+    "token_value": "string_length"
+  },
+  {
+    "position": 485,
+    "token_type": "symbol",
+    "token_value": "string_copy"
+  },
+  {
+    "position": 567,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 663,
+    "token_type": "symbol",
+    "token_value": "string_free"
+  },
+  {
+    "position": 736,
+    "token_type": "symbol",
+    "token_value": "libmap"
+  },
+  {
+    "position": 874,
+    "token_type": "symbol",
+    "token_value": "readmaps"
+  },
+  {
+    "position": 939,
+    "token_type": "string",
+    "token_value": "1024"
+  },
+  {
+    "position": 978,
+    "token_type": "string",
+    "token_value": "256"
+  },
+  {
+    "position": 1096,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 1124,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1125,
+    "token_type": "string",
+    "token_value": "/proc/%d/maps"
+  },
+  {
+    "position": 1138,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1183,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1184,
+    "token_type": "string",
+    "token_value": "ro"
+  },
+  {
+    "position": 1186,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1213,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 1250,
+    "token_type": "string",
+    "token_value": "256"
+  },
+  {
+    "position": 1325,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1326,
+    "token_type": "string",
+    "token_value": "-"
+  },
+  {
+    "position": 1327,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1371,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1372,
+    "token_type": "string",
+    "token_value": "\\0"
+  },
+  {
+    "position": 1374,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1412,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1414,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1458,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1459,
+    "token_type": "string",
+    "token_value": "\\0"
+  },
+  {
+    "position": 1461,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1500,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1502,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1546,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1547,
+    "token_type": "string",
+    "token_value": "\\0"
+  },
+  {
+    "position": 1549,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1564,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 1570,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1571,
+    "token_type": "string",
+    "token_value": "r"
+  },
+  {
+    "position": 1572,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1582,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 1588,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1589,
+    "token_type": "string",
+    "token_value": "-"
+  },
+  {
+    "position": 1590,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1600,
+    "token_type": "string",
+    "token_value": "2"
+  },
+  {
+    "position": 1606,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1607,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 1608,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1618,
+    "token_type": "string",
+    "token_value": "3"
+  },
+  {
+    "position": 1624,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1625,
+    "token_type": "string",
+    "token_value": "p"
+  },
+  {
+    "position": 1626,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1674,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1675,
+    "token_type": "string",
+    "token_value": "/"
+  },
+  {
+    "position": 1676,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1746,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1747,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 1749,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1760,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1762,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1804,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1805,
+    "token_type": "string",
+    "token_value": "\\0"
+  },
+  {
+    "position": 1807,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 1833,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1834,
+    "token_type": "string",
+    "token_value": "%"
+  },
+  {
+    "position": 1835,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1853,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1854,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 1855,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1882,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 1926,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1927,
+    "token_type": "string",
+    "token_value": "%"
+  },
+  {
+    "position": 1928,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1946,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1947,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 1948,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 1973,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 2168,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 2169,
+    "token_type": "comment",
+    "token_value": "define SIGACTION_LIBC_OFFSET 0x2e868"
+  },
+  {
+    "position": 2207,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 2208,
+    "token_type": "comment",
+    "token_value": "define LHN_LIBC_NAME \""
+  },
+  {
+    "position": 2230,
+    "token_type": "comment",
+    "token_value": "/"
+  },
+  {
+    "position": 2231,
+    "token_type": "comment",
+    "token_value": "lib"
+  },
+  {
+    "position": 2234,
+    "token_type": "comment",
+    "token_value": "/"
+  },
+  {
+    "position": 2235,
+    "token_type": "comment",
+    "token_value": "libc-2.2.4.so\""
+  },
+  {
+    "position": 2263,
+    "token_type": "symbol",
+    "token_value": "addr2line_obj_dump"
+  },
+  {
+    "position": 2292,
+    "token_type": "symbol",
+    "token_value": "pcset"
+  },
+  {
+    "position": 2316,
+    "token_type": "symbol",
+    "token_value": "pcset"
+  },
+  {
+    "position": 2339,
+    "token_type": "symbol",
+    "token_value": "pcset"
+  },
+  {
+    "position": 2389,
+    "token_type": "string",
+    "token_value": "1024"
+  },
+  {
+    "position": 2412,
+    "token_type": "string",
+    "token_value": "1024"
+  },
+  {
+    "position": 2435,
+    "token_type": "string",
+    "token_value": "1024"
+  },
+  {
+    "position": 2601,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2602,
+    "token_type": "string",
+    "token_value": "/usr/bin/addr2line --functions -C -e %s 0x%"
+  },
+  {
+    "position": 2645,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2663,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2664,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 2665,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2726,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2727,
+    "token_type": "string",
+    "token_value": "/usr/bin/addr2line --functions -C -e /proc/%d/exe 0x%"
+  },
+  {
+    "position": 2780,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2798,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2799,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 2800,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2854,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2855,
+    "token_type": "string",
+    "token_value": "r"
+  },
+  {
+    "position": 2856,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 2977,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 2978,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 2980,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3002,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3003,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3005,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3010,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 3045,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3046,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3048,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3070,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3071,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3073,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3078,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 3120,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3121,
+    "token_type": "string",
+    "token_value": "??:0"
+  },
+  {
+    "position": 3125,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3145,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3146,
+    "token_type": "string",
+    "token_value": "??"
+  },
+  {
+    "position": 3148,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3195,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3196,
+    "token_type": "string",
+    "token_value": "/usr/bin/addr2line --functions -C -e %s 0x%"
+  },
+  {
+    "position": 3239,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3257,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3258,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 3259,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3333,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3334,
+    "token_type": "string",
+    "token_value": "/usr/bin/addr2line --functions -C -e /proc/%d/exe 0x%"
+  },
+  {
+    "position": 3387,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3405,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3406,
+    "token_type": "string",
+    "token_value": "x"
+  },
+  {
+    "position": 3407,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3470,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3471,
+    "token_type": "string",
+    "token_value": "r"
+  },
+  {
+    "position": 3472,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3581,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3582,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3584,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3610,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3611,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3613,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3618,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 3647,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3648,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3650,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3676,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3677,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 3679,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3684,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 3731,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3732,
+    "token_type": "string",
+    "token_value": "/"
+  },
+  {
+    "position": 3733,
+    "token_type": "string",
+    "token_value": "'"
+  },
+  {
+    "position": 3781,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3782,
+    "token_type": "string",
+    "token_value": "sigaction.c:149"
+  },
+  {
+    "position": 3797,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3914,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3915,
+    "token_type": "string",
+    "token_value": "__pthread_sighandler"
+  },
+  {
+    "position": 3935,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3962,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 3963,
+    "token_type": "string",
+    "token_value": "__restore"
+  },
+  {
+    "position": 3972,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4264,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4265,
+    "token_type": "string",
+    "token_value": "%s %s"
+  },
+  {
+    "position": 4270,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4319,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4320,
+    "token_type": "string",
+    "token_value": "??:0 ??"
+  },
+  {
+    "position": 4327,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4342,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4369,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 4391,
+    "token_type": "symbol",
+    "token_value": "stacktrace_dump"
+  },
+  {
+    "position": 4459,
+    "token_type": "string",
+    "token_value": "1024"
+  },
+  {
+    "position": 4501,
+    "token_type": "symbol",
+    "token_value": "pcset"
+  },
+  {
+    "position": 4543,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4692,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4694,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4696,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4697,
+    "token_type": "string",
+    "token_value": "STACKTRACE:dump"
+  },
+  {
+    "position": 4712,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 4714,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4729,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4975,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4977,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 4979,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 4980,
+    "token_type": "string",
+    "token_value": "frame=%02d pc=0x%0*"
+  },
+  {
+    "position": 5001,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5019,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5020,
+    "token_type": "string",
+    "token_value": "x %s"
+  },
+  {
+    "position": 5024,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 5026,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5055,
+    "token_type": "string",
+    "token_value": "2"
+  },
+  {
+    "position": 5123,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 5125,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 5127,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5128,
+    "token_type": "string",
+    "token_value": "frame=%02d pc=0x%0*"
+  },
+  {
+    "position": 5149,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5167,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5168,
+    "token_type": "string",
+    "token_value": "x unknown"
+  },
+  {
+    "position": 5177,
+    "token_type": "string",
+    "token_value": "\\n"
+  },
+  {
+    "position": 5179,
+    "token_type": "string",
+    "token_value": "\""
+  },
+  {
+    "position": 5208,
+    "token_type": "string",
+    "token_value": "2"
+  },
+  {
+    "position": 5263,
+    "token_type": "symbol",
+    "token_value": "stacktrace_close"
+  },
+  {
+    "position": 5326,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 5547,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 5548,
+    "token_type": "comment",
+    "token_value": "define EIP_IN_SIGNAL_FRAME 17"
+  },
+  {
+    "position": 5581,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 5582,
+    "token_type": "comment",
+    "token_value": "define EIP_IN_SYSTEM_SIGNAL_FRAME 189"
+  },
+  {
+    "position": 5623,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 5624,
+    "token_type": "comment",
+    "token_value": "define H(X)                                                                \\"
+  },
+  {
+    "position": 5701,
+    "token_type": "comment",
+    "token_value": "do {                                                                    \\"
+  },
+  {
+    "position": 5780,
+    "token_type": "comment",
+    "token_value": "if (!count) {                                                       \\"
+  },
+  {
+    "position": 5859,
+    "token_type": "comment",
+    "token_value": "if (!(frame[X+1] = __builtin_frame_address(X))) count = X ;     \\"
+  },
+  {
+    "position": 5938,
+    "token_type": "comment",
+    "token_value": "}                                                                   \\"
+  },
+  {
+    "position": 6017,
+    "token_type": "comment",
+    "token_value": "} while (0)"
+  },
+  {
+    "position": 6037,
+    "token_type": "comment",
+    "token_value": "#"
+  },
+  {
+    "position": 6038,
+    "token_type": "comment",
+    "token_value": "define GETFRAMES(max)                                                      \\"
+  },
+  {
+    "position": 6115,
+    "token_type": "comment",
+    "token_value": "do {                                                                    \\"
+  },
+  {
+    "position": 6194,
+    "token_type": "comment",
+    "token_value": "int i = 0 ;                                                         \\"
+  },
+  {
+    "position": 6273,
+    "token_type": "comment",
+    "token_value": "memset(frame, 0, sizeof(frame)) ;                                   \\"
+  },
+  {
+    "position": 6352,
+    "token_type": "comment",
+    "token_value": "while(++i < max) {                                                  \\"
+  },
+  {
+    "position": 6431,
+    "token_type": "comment",
+    "token_value": "switch (i) {                                                    \\"
+  },
+  {
+    "position": 6510,
+    "token_type": "comment",
+    "token_value": "case 0:  H(0);  break ;                                     \\"
+  },
+  {
+    "position": 6589,
+    "token_type": "comment",
+    "token_value": "case 1:  H(1);  break ;                                     \\"
+  },
+  {
+    "position": 6668,
+    "token_type": "comment",
+    "token_value": "case 2:  H(2);  break ;                                     \\"
+  },
+  {
+    "position": 6747,
+    "token_type": "comment",
+    "token_value": "case 3:  H(3);  break ;                                     \\"
+  },
+  {
+    "position": 6826,
+    "token_type": "comment",
+    "token_value": "case 4:  H(4);  break ;                                     \\"
+  },
+  {
+    "position": 6905,
+    "token_type": "comment",
+    "token_value": "case 5:  H(5);  break ;                                     \\"
+  },
+  {
+    "position": 6984,
+    "token_type": "comment",
+    "token_value": "case 6:  H(6);  break ;                                     \\"
+  },
+  {
+    "position": 7063,
+    "token_type": "comment",
+    "token_value": "case 7:  H(7);  break ;                                     \\"
+  },
+  {
+    "position": 7142,
+    "token_type": "comment",
+    "token_value": "case 8:  H(8);  break ;                                     \\"
+  },
+  {
+    "position": 7221,
+    "token_type": "comment",
+    "token_value": "case 9:  H(9);  break ;                                     \\"
+  },
+  {
+    "position": 7300,
+    "token_type": "comment",
+    "token_value": "case 10: H(10); break ;                                     \\"
+  },
+  {
+    "position": 7379,
+    "token_type": "comment",
+    "token_value": "case 11: H(11); break ;                                     \\"
+  },
+  {
+    "position": 7458,
+    "token_type": "comment",
+    "token_value": "case 12: H(12); break ;                                     \\"
+  },
+  {
+    "position": 7537,
+    "token_type": "comment",
+    "token_value": "case 13: H(13); break ;                                     \\"
+  },
+  {
+    "position": 7616,
+    "token_type": "comment",
+    "token_value": "case 14: H(14); break ;                                     \\"
+  },
+  {
+    "position": 7695,
+    "token_type": "comment",
+    "token_value": "case 15: H(15); break ;                                     \\"
+  },
+  {
+    "position": 7774,
+    "token_type": "comment",
+    "token_value": "case 16: H(16); break ;                                     \\"
+  },
+  {
+    "position": 7853,
+    "token_type": "comment",
+    "token_value": "case 17: H(17); break ;                                     \\"
+  },
+  {
+    "position": 7932,
+    "token_type": "comment",
+    "token_value": "case 18: H(18); break ;                                     \\"
+  },
+  {
+    "position": 8011,
+    "token_type": "comment",
+    "token_value": "case 19: H(19); break ;                                     \\"
+  },
+  {
+    "position": 8090,
+    "token_type": "comment",
+    "token_value": "case 20: H(20); break ;                                     \\"
+  },
+  {
+    "position": 8169,
+    "token_type": "comment",
+    "token_value": "case 21: H(21); break ;                                     \\"
+  },
+  {
+    "position": 8248,
+    "token_type": "comment",
+    "token_value": "case 22: H(22); break ;                                     \\"
+  },
+  {
+    "position": 8327,
+    "token_type": "comment",
+    "token_value": "case 23: H(23); break ;                                     \\"
+  },
+  {
+    "position": 8406,
+    "token_type": "comment",
+    "token_value": "case 24: H(24); break ;                                     \\"
+  },
+  {
+    "position": 8485,
+    "token_type": "comment",
+    "token_value": "case 25: H(25); break ;                                     \\"
+  },
+  {
+    "position": 8564,
+    "token_type": "comment",
+    "token_value": "case 26: H(26); break ;                                     \\"
+  },
+  {
+    "position": 8643,
+    "token_type": "comment",
+    "token_value": "case 27: H(27); break ;                                     \\"
+  },
+  {
+    "position": 8722,
+    "token_type": "comment",
+    "token_value": "case 28: H(28); break ;                                     \\"
+  },
+  {
+    "position": 8801,
+    "token_type": "comment",
+    "token_value": "case 29: H(29); break ;                                     \\"
+  },
+  {
+    "position": 8880,
+    "token_type": "comment",
+    "token_value": "case 30: H(30); break ;                                     \\"
+  },
+  {
+    "position": 8959,
+    "token_type": "comment",
+    "token_value": "case 31: H(31); break ;                                     \\"
+  },
+  {
+    "position": 9038,
+    "token_type": "comment",
+    "token_value": "default: break ;                                            \\"
+  },
+  {
+    "position": 9117,
+    "token_type": "comment",
+    "token_value": "}                                                               \\"
+  },
+  {
+    "position": 9196,
+    "token_type": "comment",
+    "token_value": "}                                                                   \\"
+  },
+  {
+    "position": 9275,
+    "token_type": "comment",
+    "token_value": "} while (0)"
+  },
+  {
+    "position": 9300,
+    "token_type": "symbol",
+    "token_value": "stacktrace_get"
+  },
+  {
+    "position": 9361,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 9390,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 9480,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 9593,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 9628,
+    "token_type": "symbol",
+    "token_value": "pcset"
+  },
+  {
+    "position": 9660,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 9695,
+    "token_type": "symbol",
+    "token_value": "pcset"
+  },
+  {
+    "position": 9937,
+    "token_type": "string",
+    "token_value": "1"
+  },
+  {
+    "position": 10007,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 10059,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 10167,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 10268,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 10711,
+    "token_type": "string",
+    "token_value": "4"
+  },
+  {
+    "position": 10732,
+    "token_type": "string",
+    "token_value": "190"
+  },
+  {
+    "position": 10892,
+    "token_type": "string",
+    "token_value": "0"
+  },
+  {
+    "position": 11350,
+    "token_type": "string",
+    "token_value": "0"
+  }
+]
