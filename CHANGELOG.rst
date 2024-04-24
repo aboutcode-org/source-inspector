@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.5.0
+------
+
+- Add support to collect strings, comments and symbols from source using Pygments 
+- Add support to collect strings and symbols from source using tree-sitter
+
 
 v0.3.0
 ------
