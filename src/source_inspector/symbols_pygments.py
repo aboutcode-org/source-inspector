@@ -20,11 +20,10 @@ from pygments.token import Comment
 from pygments.token import Literal
 from pygments.token import Name
 from pygments.token import Punctuation
+from pygments.token import Whitespace
 from pygments.util import ClassNotFound
 from textcode import analysis
 from typecode.contenttype import Type
-
-from source_inspector.pygments_lexing import get_tokens
 
 """
 Extract strings and symbols from source code files with pygments.
@@ -35,26 +34,29 @@ LOG = logging.getLogger(__name__)
 @scan_impl
 class PygmentsSymbolsAndStringScannerPlugin(ScanPlugin):
     """
-    Scan a source file for symbols and strings using Pygments.
+    Scan a source file for symbols, strings and comments using Pygments.
     """
 
     resource_attributes = dict(
-        pygments_symbols=attr.ib(default=attr.Factory(list), repr=False),
+        source_symbols=attr.ib(default=attr.Factory(list), repr=False),
+        source_strings=attr.ib(default=attr.Factory(list), repr=False),
+        source_comments=attr.ib(default=attr.Factory(list), repr=False),
     )
 
     options = [
         PluggableCommandLineOption(
-            ("--pygments-symbol",),
+            ("--pygments-symbol-and-string",),
             is_flag=True,
             default=False,
-            help="Collect source symbols and strings using pygments.",
+            help="Collect source symbols, strings and comments using pygments.",
             help_group=SCAN_GROUP,
             sort_order=100,
+            conflicting_options=["source_symbol", "source_string", "treesitter_symbol_and_string"],
         ),
     ]
 
-    def is_enabled(self, pygments_symbol, **kwargs):
-        return pygments_symbol
+    def is_enabled(self, pygments_symbol_and_string, **kwargs):
+        return pygments_symbol_and_string
 
     def get_scanner(self, **kwargs):
         return get_pygments_symbols
@@ -62,9 +64,28 @@ class PygmentsSymbolsAndStringScannerPlugin(ScanPlugin):
 
 def get_pygments_symbols(location, **kwargs):
     """
-    Return a mapping of symbols and strings for a source file at ``location``.
+    Return a mapping of symbol, string and comment lists for a source file at ``location``.
     """
-    return dict(pygments_symbols=list(get_tokens(location=location)))
+    source_strings = []
+    source_comments = []
+    source_symbols = []
+
+    for token in get_tokens(location=location):
+        token_type = token["token_type"]
+        token_value = token["token_value"]
+
+        if token_type == "string":
+            source_strings.append(token_value)
+        elif token_type == "comment":
+            source_comments.append(token_value)
+        elif token_type == "symbol":
+            source_symbols.append(token_value)
+
+    return dict(
+        source_symbols=source_symbols,
+        source_strings=source_strings,
+        source_comments=source_comments,
+    )
 
 
 def get_tokens(location, with_literals=True, with_comments=False):
@@ -95,13 +116,17 @@ def get_tokens(location, with_literals=True, with_comments=False):
         tvalue = tvalue.strip()
         if not tvalue:
             continue
-        if ttype in Punctuation:
+
+        if ttype in (
+            Punctuation,
+            Whitespace,
+        ):
             continue
 
-        if with_literals and ttype in (Literal,) and ttype not in (Punctuation):
+        if with_literals and ttype in Literal:
             yield dict(position=pos, token_type="string", token_value=tvalue)
 
-        elif with_comments and ttype in Comment:  # and ttype != Token.Comment.Preproc:
+        elif with_comments and ttype in Comment:
             yield dict(position=pos, token_type="comment", token_value=tvalue)
 
         elif ttype in symbols:

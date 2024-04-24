@@ -43,6 +43,7 @@ class XgettextStringScannerPlugin(ScanPlugin):
             help="Collect source strings using xgettext.",
             help_group=SCAN_GROUP,
             sort_order=100,
+            conflicting_options=["treesitter_symbol_and_string", "pygments_symbol_and_string"],
         ),
     ]
 

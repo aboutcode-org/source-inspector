@@ -57,7 +57,7 @@ class TestPygmentsSymbolScannerPlugin(FileBasedTesting):
     def test_symbols_scanner_basic_cli_cpp(self):
         test_file = self.get_test_loc("test3.cpp")
         result_file = self.get_temp_file("json")
-        args = ["--pygments-symbol", test_file, "--json-pp", result_file]
+        args = ["--pygments-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
@@ -66,7 +66,7 @@ class TestPygmentsSymbolScannerPlugin(FileBasedTesting):
     def test_symbols_scanner_long_cli(self):
         test_file = self.get_test_loc("if_ath.c")
         result_file = self.get_temp_file("json")
-        args = ["--pygments-symbol", test_file, "--json-pp", result_file]
+        args = ["--pygments-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("if_ath.c-expected.json")
