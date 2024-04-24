@@ -88,7 +88,7 @@ def collect_strings(location, clean=True):
     )
 
     if rc != 0:
-        raise Exception(open(err).read())
+        raise Exception(err)
 
     yield from parse_po_text(po_text=result, drop_header=True, clean=clean)
 

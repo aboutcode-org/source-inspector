@@ -79,7 +79,7 @@ def collect_symbols(location):
     )
 
     if rc != 0:
-        raise Exception(open(err).read())
+        raise Exception(err)
 
     # set of ctags field names we support
     supported_fields = {
