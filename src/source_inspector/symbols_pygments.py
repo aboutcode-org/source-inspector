@@ -91,7 +91,7 @@ def get_pygments_symbols(location, **kwargs):
 def get_tokens(location, with_literals=True, with_comments=False):
     """
     Yield a stream of strings tagged as symbols. Include optional literals (aka. strings.) and comments.
-    Yield nothing for files that are not parseable.
+    Yield nothing for files that are not parsable.
     """
     if not Type(location).is_source:
         return
