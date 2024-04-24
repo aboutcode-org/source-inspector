@@ -48,7 +48,7 @@ See https://tree-sitter.github.io/
 
 
 @scan_impl
-class TSSymbolAndStringScannerPlugin(ScanPlugin):
+class TreeSitterSymbolAndStringScannerPlugin(ScanPlugin):
     """
     Scan a source file for symbols and strings using tree-sitter.
     """
@@ -60,23 +60,24 @@ class TSSymbolAndStringScannerPlugin(ScanPlugin):
 
     options = [
         PluggableCommandLineOption(
-            ("--source-symbol-string",),
+            ("--treesitter-symbol-and-string",),
             is_flag=True,
             default=False,
             help="Collect source symbols and strings using tree-sitter.",
             help_group=SCAN_GROUP,
             sort_order=100,
+            conflicting_options=["source_symbol", "source_string", "pygments_symbol_and_string"],
         ),
     ]
 
-    def is_enabled(self, source_symbol_string, **kwargs):
-        return source_symbol_string
+    def is_enabled(self, treesitter_symbol_and_string, **kwargs):
+        return treesitter_symbol_and_string
 
     def get_scanner(self, **kwargs):
-        return get_symbols_and_strings
+        return get_treesitter_symbols
 
 
-def get_symbols_and_strings(location, **kwargs):
+def get_treesitter_symbols(location, **kwargs):
     """
     Return a mapping of symbols and strings for a source file at ``location``.
     """
@@ -135,9 +136,11 @@ def get_parser(location):
 def traverse(node, symbols, strings, string_id, depth=0):
     """Recursively traverse the parse tree node to collect symbols and strings."""
     if node.type == "identifier":
-        symbols.append(node.text.decode())
+        if source_symbol:=node.text.decode():
+            symbols.append(source_symbol)
     elif node.type == string_id:
-        strings.append(node.text.decode("utf8").replace('"', ""))
+        if source_string:=node.text.decode("unicode_escape").replace('"', ""):
+            strings.append(source_string)
     for child in node.children:
         traverse(child, symbols, strings, string_id, depth + 1)
 
@@ -145,7 +148,7 @@ def traverse(node, symbols, strings, string_id, depth=0):
 TS_LANGUAGE_WHEELS = {
     "Bash": {"wheel": "tree_sitter_bash", "string_id": "raw_string"},
     "C": {"wheel": "tree_sitter_c", "string_id": "string_literal"},
-    "C++": {"wheel": "tree_sitter_cpp", "string_id": "raw_string_literal"},
+    "C++": {"wheel": "tree_sitter_cpp", "string_id": "string_literal"},
     "Go": {"wheel": "tree_sitter_go", "string_id": "raw_string_literal"},
     "Java": {"wheel": "tree_sitter_java", "string_id": "string_literal"},
     "JavaScript": {"wheel": "tree_sitter_javascript", "string_id": "string"},
