@@ -2,7 +2,7 @@ source-inspector
 ================================
 
 source-inspector is a set of utilities to inspect and analyze source
-code and collect interesting data using various tools such as code symbols and strings.
+code and collect interesting data using various tools such as code symbols, strings and comments.
 This is also a ScanCode-toolkit plugin.
 
 Homepage: https://github.com/nexB/source-inspector
@@ -46,4 +46,11 @@ To get started:
 5. Run a basic scan to collect strings and display as YAML on screen::
 
     scancode --source-string tests/data/symbols_ctags/test3.cpp --yaml -
-    
+
+6. Run a basic scan to collect symbols, strings and comments using `Pygments <https://pygments.org/>`_, and display them as YAML on the screen::
+
+    scancode --pygments-symbol-and-string tests/data/symbols_ctags/test3.cpp --yaml -
+
+7. Run a basic scan to collect symbols and strings using `Tree-Sitter <https://tree-sitter.github.io/tree-sitter/>`_, and display them as YAML on the screen::
+
+    scancode --treesitter-symbol-and-string tests/data/symbols_ctags/test3.cpp --yaml -
