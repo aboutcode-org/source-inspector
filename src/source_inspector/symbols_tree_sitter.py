@@ -126,7 +126,7 @@ def get_parser(location):
     except ModuleNotFoundError:
         raise TreeSitterWheelNotInstalled(f"{wheel} package is not installed")
 
-    LANGUAGE = Language(grammar.language(), language)
+    LANGUAGE = Language(grammar.language())
     parser = Parser()
     parser.set_language(LANGUAGE)
 
