@@ -96,13 +96,13 @@ def collect_symbols_and_strings(location):
     symbols, strings = [], []
 
     if parser_result := get_parser(location):
-        parser, string_id = parser_result
+        parser, language_info = parser_result
 
         with open(location, "rb") as f:
             source = f.read()
 
         tree = parser.parse(source)
-        traverse(tree.root_node, symbols, strings, string_id)
+        traverse(tree.root_node, symbols, strings, language_info)
 
     return symbols, strings
 
@@ -118,42 +118,74 @@ def get_parser(location):
     if not language or language not in TS_LANGUAGE_WHEELS:
         return
 
-    wheel = TS_LANGUAGE_WHEELS[language]["wheel"]
-    string_id = TS_LANGUAGE_WHEELS[language]["string_id"]
+    language_info = TS_LANGUAGE_WHEELS[language]
+    wheel = language_info["wheel"]
 
     try:
         grammar = importlib.import_module(wheel)
     except ModuleNotFoundError:
         raise TreeSitterWheelNotInstalled(f"{wheel} package is not installed")
 
-    LANGUAGE = Language(grammar.language(), language)
+    LANGUAGE = Language(grammar.language())
     parser = Parser()
     parser.set_language(LANGUAGE)
 
-    return parser, string_id
+    return parser, language_info
 
 
-def traverse(node, symbols, strings, string_id, depth=0):
+def traverse(node, symbols, strings, language_info, depth=0):
     """Recursively traverse the parse tree node to collect symbols and strings."""
-    if node.type == "identifier":
-        if source_symbol:=node.text.decode():
+    if node.type in language_info.get("identifiers"):
+        if source_symbol := node.text.decode():
             symbols.append(source_symbol)
-    elif node.type == string_id:
-        if source_string:=node.text.decode("unicode_escape").replace('"', ""):
+    elif node.type in language_info.get("string_literals"):
+        if source_string := node.text.decode():
             strings.append(source_string)
     for child in node.children:
-        traverse(child, symbols, strings, string_id, depth + 1)
+        traverse(child, symbols, strings, language_info, depth + 1)
 
 
 TS_LANGUAGE_WHEELS = {
-    "Bash": {"wheel": "tree_sitter_bash", "string_id": "raw_string"},
-    "C": {"wheel": "tree_sitter_c", "string_id": "string_literal"},
-    "C++": {"wheel": "tree_sitter_cpp", "string_id": "string_literal"},
-    "Go": {"wheel": "tree_sitter_go", "string_id": "raw_string_literal"},
-    "Java": {"wheel": "tree_sitter_java", "string_id": "string_literal"},
-    "JavaScript": {"wheel": "tree_sitter_javascript", "string_id": "string"},
-    "Python": {"wheel": "tree_sitter_python", "string_id": "string"},
-    "Rust": {"wheel": "tree_sitter_rust", "string_id": "raw_string_literal"},
+    "Bash": {
+        "wheel": "tree_sitter_bash",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "C": {
+        "wheel": "tree_sitter_c",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "C++": {
+        "wheel": "tree_sitter_cpp",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "Go": {
+        "wheel": "tree_sitter_go",
+        "identifiers": ["identifier"],
+        "string_literals": ["raw_string_literal"],
+    },
+    "Java": {
+        "wheel": "tree_sitter_java",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "JavaScript": {
+        "wheel": "tree_sitter_javascript",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "Python": {
+        "wheel": "tree_sitter_python",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "Rust": {
+        "wheel": "tree_sitter_rust",
+        "identifiers": ["identifier"],
+        "string_literals": ["raw_string_literal"],
+    },
 }
 
 
