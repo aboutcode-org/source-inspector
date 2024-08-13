@@ -4,7 +4,7 @@
 # ScanCode is a trademark of nexB Inc.
 # SPDX-License-Identifier: Apache-2.0
 # See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
-# See https://github.com/nexB/source-inspector for support or download.
+# See https://github.com/aboutcode-org/source-inspector for support or download.
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
 
@@ -43,7 +43,8 @@ class XgettextStringScannerPlugin(ScanPlugin):
             help="Collect source strings using xgettext.",
             help_group=SCAN_GROUP,
             sort_order=100,
-            conflicting_options=["treesitter_symbol_and_string", "pygments_symbol_and_string"],
+            conflicting_options=[
+                "treesitter_symbol_and_string", "pygments_symbol_and_string"],
         ),
     ]
 
@@ -76,7 +77,7 @@ def collect_strings(location, clean=True):
         cmd_loc="xgettext",
         args=[
             # this is a trick to force getting UTF back
-            # see https://github.com/nexB/source-inspector/issues/14#issuecomment-2001893496
+            # see https://github.com/aboutcode-org/source-inspector/issues/14#issuecomment-2001893496
             '--copyright-holder="ø"',
             "--no-wrap",
             "--extract-all",
@@ -138,7 +139,8 @@ def parse_po_text(po_text, drop_header=False, clean=True):
                 _, _, line = line.partition("#: ")
                 filename, _, _ = line.partition(":")
                 numbers = line.replace(filename + ":", "")
-                numbers = [int(l) for ln in numbers.split() if (l := ln.strip())]
+                numbers = [int(l)
+                           for ln in numbers.split() if (l := ln.strip())]
                 line_numbers.extend(numbers)
 
             elif line.startswith(

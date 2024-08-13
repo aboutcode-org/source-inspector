@@ -4,7 +4,7 @@
 # ScanCode is a trademark of nexB Inc.
 # SPDX-License-Identifier: Apache-2.0
 # See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
-# See https://github.com/nexB/source_inspector for support or download.
+# See https://github.com/aboutcode-org/source_inspector for support or download.
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
 
@@ -25,7 +25,8 @@ REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
 class TestXgettextSymbolScannerPlugin(FileBasedTesting):
 
-    test_data_dir = os.path.join(os.path.dirname(__file__), "data/strings_xgettext")
+    test_data_dir = os.path.join(
+        os.path.dirname(__file__), "data/strings_xgettext")
 
     def test_is_xgettext_installed(self):
         assert is_xgettext_installed()
@@ -232,7 +233,8 @@ msgstr ""
         args = ["--source-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
-        expected_loc = self.get_test_loc("lineedit.c-expected.json", must_exist=False)
+        expected_loc = self.get_test_loc(
+            "lineedit.c-expected.json", must_exist=False)
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
     @pytest.mark.skipif(
@@ -247,5 +249,6 @@ msgstr ""
         args = ["--source-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
-        expected_loc = self.get_test_loc("fdisk.c-expected.json", must_exist=False)
+        expected_loc = self.get_test_loc(
+            "fdisk.c-expected.json", must_exist=False)
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)

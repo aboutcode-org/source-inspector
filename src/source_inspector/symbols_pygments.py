@@ -4,7 +4,7 @@
 # ScanCode is a trademark of nexB Inc.
 # SPDX-License-Identifier: Apache-2.0
 # See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
-# See https://github.com/nexB/source-inspector for support or download.
+# See https://github.com/aboutcode-org/source-inspector for support or download.
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
 
@@ -51,7 +51,8 @@ class PygmentsSymbolsAndStringScannerPlugin(ScanPlugin):
             help="Collect source symbols, strings and comments using pygments.",
             help_group=SCAN_GROUP,
             sort_order=100,
-            conflicting_options=["source_symbol", "source_string", "treesitter_symbol_and_string"],
+            conflicting_options=["source_symbol",
+                                 "source_string", "treesitter_symbol_and_string"],
         ),
     ]
 

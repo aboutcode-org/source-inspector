@@ -5,7 +5,7 @@ source-inspector is a set of utilities to inspect and analyze source
 code and collect interesting data using various tools such as code symbols, strings and comments.
 This is also a ScanCode-toolkit plugin.
 
-Homepage: https://github.com/nexB/source-inspector
+Homepage: https://github.com/aboutcode-org/source-inspector
 License: Apache-2.0
 
 
