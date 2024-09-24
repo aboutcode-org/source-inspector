@@ -36,7 +36,7 @@ def check_json(expected, results, regen=REGEN_TEST_FIXTURES):
         assert results == expected
 
 
-class TestPygmentsSymbolScannerPlugin(FileBasedTesting):
+class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
 
     test_data_dir = os.path.join(os.path.dirname(
         __file__), "data/symbols_tree_sitter")
