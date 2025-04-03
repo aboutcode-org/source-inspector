@@ -16,6 +16,8 @@ from commoncode.testcase import FileBasedTesting
 from scancode.cli_test_utils import check_json_scan
 from scancode.cli_test_utils import run_scan_click
 
+from source_inspector.symbols_tree_sitter import get_treesitter_symbols
+
 # Used for tests to regenerate fixtures with regen=True
 REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
@@ -59,4 +61,14 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("if_ath.c-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_objective_c(self):
+        test_file = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string",
+                test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
