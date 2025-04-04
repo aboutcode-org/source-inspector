@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "BrazeSDKAuthDelegateWrapper.m",
+      "type": "file",
+      "source_symbols": [
+        "BrazeSDKAuthDelegateWrapper",
+        "braze",
+        "braze",
+        "sdkAuthenticationFailedWithError",
+        "error",
+        "self",
+        "respondsToSelector",
+        "authError",
+        "ABKSdkAuthenticationError",
+        "alloc",
+        "initWithSDKAuthenticationError",
+        "error",
+        "self",
+        "handleSdkAuthenticationError",
+        "authError"
+      ],
+      "source_strings": [],
+      "scan_errors": []
+    }
+  ]
+}
