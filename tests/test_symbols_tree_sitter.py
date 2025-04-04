@@ -40,14 +40,12 @@ def check_json(expected, results, regen=REGEN_TEST_FIXTURES):
 
 class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
 
-    test_data_dir = os.path.join(os.path.dirname(
-        __file__), "data/symbols_tree_sitter")
+    test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_tree_sitter")
 
     def test_symbols_scanner_basic_cli_cpp(self):
         test_file = self.get_test_loc("test3.cpp")
         result_file = self.get_temp_file("json")
-        args = ["--treesitter-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
@@ -56,8 +54,7 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
     def test_symbols_scanner_long_cli(self):
         test_file = self.get_test_loc("if_ath.c")
         result_file = self.get_temp_file("json")
-        args = ["--treesitter-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("if_ath.c-expected.json")
@@ -66,8 +63,7 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
     def test_symbols_strings_objective_c(self):
         test_file = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m")
         result_file = self.get_temp_file("json")
-        args = ["--treesitter-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m-expected.json")

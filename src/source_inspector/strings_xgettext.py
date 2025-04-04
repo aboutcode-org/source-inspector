@@ -43,8 +43,7 @@ class XgettextStringScannerPlugin(ScanPlugin):
             help="Collect source strings using xgettext.",
             help_group=SCAN_GROUP,
             sort_order=100,
-            conflicting_options=[
-                "treesitter_symbol_and_string", "pygments_symbol_and_string"],
+            conflicting_options=["treesitter_symbol_and_string", "pygments_symbol_and_string"],
         ),
     ]
 
@@ -139,8 +138,7 @@ def parse_po_text(po_text, drop_header=False, clean=True):
                 _, _, line = line.partition("#: ")
                 filename, _, _ = line.partition(":")
                 numbers = line.replace(filename + ":", "")
-                numbers = [int(l)
-                           for ln in numbers.split() if (l := ln.strip())]
+                numbers = [int(l) for ln in numbers.split() if (l := ln.strip())]
                 line_numbers.extend(numbers)
 
             elif line.startswith(
