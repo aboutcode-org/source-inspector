@@ -20,7 +20,11 @@
         "handleSdkAuthenticationError",
         "authError"
       ],
-      "source_strings": [],
+      "source_strings": [
+        "BrazeSDKAuthDelegateWrapper.h",
+        "ABKSdkAuthenticationDelegate.h",
+        "AppboyKit/ABKSdkAuthenticationError+Compat.h"
+      ],
       "scan_errors": []
     }
   ]

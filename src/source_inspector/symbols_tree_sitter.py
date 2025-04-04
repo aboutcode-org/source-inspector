@@ -179,7 +179,7 @@ TS_LANGUAGE_WHEELS = {
     "Objective-C": {
         "wheel": "tree_sitter_objc",
         "identifiers": ["identifier"],
-        "string_literals": ["raw_string_literal"],
+        "string_literals": ["string_content"],
     },
     "Python": {
         "wheel": "tree_sitter_python",
