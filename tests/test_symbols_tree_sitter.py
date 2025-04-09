@@ -60,6 +60,15 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         expected_loc = self.get_test_loc("if_ath.c-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
+    def test_symbols_strings_c_sharp(self):
+        test_file = self.get_test_loc("LibraryTypeOptionsDto.cs")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("LibraryTypeOptionsDto.cs-expected.json")
+        check_json_scan(expected_loc, result_file, regen=True)
+
     def test_symbols_strings_objective_c(self):
         test_file = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m")
         result_file = self.get_temp_file("json")
