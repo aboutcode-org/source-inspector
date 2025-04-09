@@ -190,6 +190,11 @@ TS_LANGUAGE_WHEELS = {
         "identifiers": ["identifier"],
         "string_literals": ["raw_string_literal"],
     },
+    "Swift": {
+        "wheel": "tree_sitter_swift",
+        "identifiers": ["identifier"],
+        "string_literals": ["raw_string_literal"],
+    },
 }
 
 
