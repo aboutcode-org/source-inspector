@@ -16,6 +16,8 @@ from commoncode.testcase import FileBasedTesting
 from scancode.cli_test_utils import check_json_scan
 from scancode.cli_test_utils import run_scan_click
 
+from source_inspector.symbols_tree_sitter import get_treesitter_symbols
+
 # Used for tests to regenerate fixtures with regen=True
 REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
@@ -38,14 +40,12 @@ def check_json(expected, results, regen=REGEN_TEST_FIXTURES):
 
 class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
 
-    test_data_dir = os.path.join(os.path.dirname(
-        __file__), "data/symbols_tree_sitter")
+    test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_tree_sitter")
 
     def test_symbols_scanner_basic_cli_cpp(self):
         test_file = self.get_test_loc("test3.cpp")
         result_file = self.get_temp_file("json")
-        args = ["--treesitter-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
@@ -54,9 +54,17 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
     def test_symbols_scanner_long_cli(self):
         test_file = self.get_test_loc("if_ath.c")
         result_file = self.get_temp_file("json")
-        args = ["--treesitter-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("if_ath.c-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_objective_c(self):
+        test_file = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("BrazeSDKAuthDelegateWrapper.m-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)

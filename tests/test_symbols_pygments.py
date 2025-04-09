@@ -40,28 +40,24 @@ def check_json(expected, results, regen=REGEN_TEST_FIXTURES):
 
 class TestPygmentsSymbolScannerPlugin(FileBasedTesting):
 
-    test_data_dir = os.path.join(
-        os.path.dirname(__file__), "data/symbols_pygments")
+    test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_pygments")
 
     def test_get_tokens_basic(self):
         test_file = self.get_test_loc("test3.cpp")
-        expected_loc = self.get_test_loc(
-            "test3.cpp-expected-tokens.json", must_exist=False)
+        expected_loc = self.get_test_loc("test3.cpp-expected-tokens.json", must_exist=False)
         results = list(get_tokens(test_file, with_comments=True))
         check_json(expected_loc, results, regen=REGEN_TEST_FIXTURES)
 
     def test_get_tokens_long(self):
         test_file = self.get_test_loc("if_ath.c")
-        expected_loc = self.get_test_loc(
-            "if_ath.c-expected-tokens.json", must_exist=False)
+        expected_loc = self.get_test_loc("if_ath.c-expected-tokens.json", must_exist=False)
         results = list(get_tokens(test_file, with_comments=True))
         check_json(expected_loc, results, regen=REGEN_TEST_FIXTURES)
 
     def test_symbols_scanner_basic_cli_cpp(self):
         test_file = self.get_test_loc("test3.cpp")
         result_file = self.get_temp_file("json")
-        args = ["--pygments-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--pygments-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("test3.cpp-expected.json")
@@ -70,8 +66,7 @@ class TestPygmentsSymbolScannerPlugin(FileBasedTesting):
     def test_symbols_scanner_long_cli(self):
         test_file = self.get_test_loc("if_ath.c")
         result_file = self.get_temp_file("json")
-        args = ["--pygments-symbol-and-string",
-                test_file, "--json-pp", result_file]
+        args = ["--pygments-symbol-and-string", test_file, "--json-pp", result_file]
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("if_ath.c-expected.json")

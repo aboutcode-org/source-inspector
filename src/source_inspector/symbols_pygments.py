@@ -51,8 +51,7 @@ class PygmentsSymbolsAndStringScannerPlugin(ScanPlugin):
             help="Collect source symbols, strings and comments using pygments.",
             help_group=SCAN_GROUP,
             sort_order=100,
-            conflicting_options=["source_symbol",
-                                 "source_string", "treesitter_symbol_and_string"],
+            conflicting_options=["source_symbol", "source_string", "treesitter_symbol_and_string"],
         ),
     ]
 

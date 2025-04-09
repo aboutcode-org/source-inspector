@@ -66,8 +66,7 @@ class TreeSitterSymbolAndStringScannerPlugin(ScanPlugin):
             help="Collect source symbols and strings using tree-sitter.",
             help_group=SCAN_GROUP,
             sort_order=100,
-            conflicting_options=["source_symbol",
-                                 "source_string", "pygments_symbol_and_string"],
+            conflicting_options=["source_symbol", "source_string", "pygments_symbol_and_string"],
         ),
     ]
 
@@ -128,13 +127,12 @@ def get_parser(location):
         raise TreeSitterWheelNotInstalled(f"{wheel} package is not installed")
 
     LANGUAGE = Language(grammar.language())
-    parser = Parser()
-    parser.set_language(LANGUAGE)
+    parser = Parser(language=LANGUAGE)
 
     return parser, language_info
 
 
-def traverse(node, symbols, strings, language_info, depth=0):
+def traverse(node, symbols, strings, language_info):
     """Recursively traverse the parse tree node to collect symbols and strings."""
     if node.type in language_info.get("identifiers"):
         if source_symbol := node.text.decode():
@@ -143,7 +141,7 @@ def traverse(node, symbols, strings, language_info, depth=0):
         if source_string := node.text.decode():
             strings.append(source_string)
     for child in node.children:
-        traverse(child, symbols, strings, language_info, depth + 1)
+        traverse(child, symbols, strings, language_info)
 
 
 TS_LANGUAGE_WHEELS = {
@@ -176,6 +174,11 @@ TS_LANGUAGE_WHEELS = {
         "wheel": "tree_sitter_javascript",
         "identifiers": ["identifier"],
         "string_literals": ["string_literal"],
+    },
+    "Objective-C": {
+        "wheel": "tree_sitter_objc",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_content"],
     },
     "Python": {
         "wheel": "tree_sitter_python",
