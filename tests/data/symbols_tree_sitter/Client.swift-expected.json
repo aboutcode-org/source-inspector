@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "path": "Client.swift",
+      "type": "file",
+      "source_symbols": [
+        "NIOCore",
+        "Logging",
+        "NIOHTTP1",
+        "T",
+        "T",
+        "T"
+      ],
+      "source_strings": [],
+      "scan_errors": []
+    }
+  ]
+}
