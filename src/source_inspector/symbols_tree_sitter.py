@@ -160,6 +160,11 @@ TS_LANGUAGE_WHEELS = {
         "identifiers": ["identifier"],
         "string_literals": ["string_literal"],
     },
+    "C#": {
+        "wheel": "tree_sitter_c_sharp",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
     "Go": {
         "wheel": "tree_sitter_go",
         "identifiers": ["identifier"],

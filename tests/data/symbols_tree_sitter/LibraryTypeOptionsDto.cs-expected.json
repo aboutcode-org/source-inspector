@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "path": "LibraryTypeOptionsDto.cs",
+      "type": "file",
+      "source_symbols": [
+        "System",
+        "System",
+        "Collections",
+        "Generic",
+        "MediaBrowser",
+        "Model",
+        "Configuration",
+        "MediaBrowser",
+        "Model",
+        "Entities",
+        "Jellyfin",
+        "Api",
+        "Models",
+        "LibraryDtos",
+        "LibraryTypeOptionsDto",
+        "Type",
+        "IReadOnlyList",
+        "LibraryOptionInfoDto",
+        "MetadataFetchers",
+        "Array",
+        "Empty",
+        "LibraryOptionInfoDto",
+        "IReadOnlyList",
+        "LibraryOptionInfoDto",
+        "ImageFetchers",
+        "Array",
+        "Empty",
+        "LibraryOptionInfoDto",
+        "IReadOnlyList",
+        "ImageType",
+        "SupportedImageTypes",
+        "Array",
+        "Empty",
+        "ImageType",
+        "IReadOnlyList",
+        "ImageOption",
+        "DefaultImageOptions",
+        "Array",
+        "Empty",
+        "ImageOption"
+      ],
+      "source_strings": [],
+      "scan_errors": []
+    }
+  ]
+}
