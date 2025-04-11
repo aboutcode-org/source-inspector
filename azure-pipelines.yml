@@ -9,13 +9,11 @@ jobs:
 
     - template: etc/ci/azure-posix.yml
       parameters:
-          job_name: ubuntu20_cpython
-          image_name: ubuntu-20.04
-          python_versions: ['3.9', '3.10', '3.11', '3.12']
+          job_name: run_code_checks
+          image_name: ubuntu-24.04
+          python_versions: ['3.12']
           test_suites:
-              all: |
-                 sudo apt-get install universal-ctags gettext
-                 venv/bin/pytest -n 2 -vvs
+              all: make check
 
     - template: etc/ci/azure-posix.yml
       parameters:
