@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v0.6.0
+------
+
+- Bump tree-sitter to v0.23
+- Collect swift source symbols and strings using tree-sitter https://github.com/aboutcode-org/source-inspector/pull/31
+- Collect Objective C source symbols and strings using tree-sitter https://github.com/aboutcode-org/source-inspector/pull/30
+- Collect C# source symbols and strings using tree-sitter https://github.com/aboutcode-org/source-inspector/pull/32
+- Fix javascript and add typescript source symbols and strings collection using tree-sitter https://github.com/aboutcode-org/source-inspector/pull/33
+
 v0.5.2
 ------
 
