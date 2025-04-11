@@ -178,7 +178,12 @@ TS_LANGUAGE_WHEELS = {
     "JavaScript": {
         "wheel": "tree_sitter_javascript",
         "identifiers": ["identifier"],
-        "string_literals": ["string_literal"],
+        "string_literals": ["string_fragment"],
+    },
+    "TypeScript": {
+        "wheel": "tree_sitter_javascript",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_fragment"],
     },
     "Objective-C": {
         "wheel": "tree_sitter_objc",
