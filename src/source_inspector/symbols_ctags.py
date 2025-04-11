@@ -120,6 +120,7 @@ def is_anon_string(symbol):
     True
     >>> is_anon_string("__anon_user_id")
     False
+
     """
     if symbol.startswith("__anon"):
         hex_part = symbol[6:]

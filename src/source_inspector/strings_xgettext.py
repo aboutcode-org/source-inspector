@@ -112,7 +112,7 @@ def parse_po_text(po_text, drop_header=False, clean=True):
     #: symbols_ctags.py:21
     #: symbols_ctags.py:23
     msgid ""
-    "Extract symbols information from source code files with ctags.\n"
+    "Extract symbols information from source code files with ctags."
     #, c-format
     msgstr ""
 

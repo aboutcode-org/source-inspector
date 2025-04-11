@@ -37,7 +37,6 @@ def check_json(expected, results, regen=REGEN_TEST_FIXTURES):
 
 
 class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
-
     test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_tree_sitter")
 
     def test_symbols_scanner_basic_cli_cpp(self):

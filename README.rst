@@ -64,19 +64,19 @@ This project is funded, supported and sponsored by:
 
 - Generous support and contributions from users like you!
 - the European Commission NGI programme
-- the NLnet Foundation 
+- the NLnet Foundation
 - the Swiss State Secretariat for Education, Research and Innovation (SERI)
 - Google, including the Google Summer of Code and the Google Seasons of Doc programmes
 - Mercedes-Benz Group
 - Microsoft and Microsoft Azure
 - AboutCode ASBL
-- nexB Inc. 
+- nexB Inc.
 
 
 
-|europa|   |dgconnect| 
+|europa|   |dgconnect|
 
-|ngi|   |nlnet|   
+|ngi|   |nlnet|
 
 |aboutcode|  |nexb|
 
@@ -92,7 +92,7 @@ Communications Networks, Content and Technology under grant agreement No 1010929
 
 This project was funded through the NGI0 Entrust Fund, a fund established by NLnet with financial
 support from the European Commission's Next Generation Internet programme, under the aegis of DG
-Communications Networks, Content and Technology under grant agreement No 101069594. 
+Communications Networks, Content and Technology under grant agreement No 101069594.
 
 |ngizeroentrust| https://nlnet.nl/project/purl2sym/
 
