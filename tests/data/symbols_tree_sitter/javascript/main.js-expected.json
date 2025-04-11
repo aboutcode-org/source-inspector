@@ -1,0 +1,42 @@
+{
+  "files": [
+    {
+      "path": "main.js",
+      "type": "file",
+      "source_symbols": [
+        "charSet",
+        "generatePassword",
+        "length",
+        "password",
+        "i",
+        "i",
+        "length",
+        "i",
+        "randomIndex",
+        "Math",
+        "Math",
+        "charSet",
+        "randomChar",
+        "charSet",
+        "randomIndex",
+        "password",
+        "randomChar",
+        "password",
+        "passwordLength",
+        "parseInt",
+        "prompt",
+        "password",
+        "generatePassword",
+        "passwordLength",
+        "alert",
+        "password"
+      ],
+      "source_strings": [
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_-+=",
+        "Enter the desired length of your password:",
+        "Your random password is: "
+      ],
+      "scan_errors": []
+    }
+  ]
+}
