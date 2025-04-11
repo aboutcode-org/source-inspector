@@ -21,7 +21,6 @@ REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
 
 class TestCtagsSymbolScannerPlugin(FileBasedTesting):
-
     test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_ctags")
 
     def test_is_ctags_installed(self):

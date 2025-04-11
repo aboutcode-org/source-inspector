@@ -39,7 +39,6 @@ def check_json(expected, results, regen=REGEN_TEST_FIXTURES):
 
 
 class TestPygmentsSymbolScannerPlugin(FileBasedTesting):
-
     test_data_dir = os.path.join(os.path.dirname(__file__), "data/symbols_pygments")
 
     def test_get_tokens_basic(self):

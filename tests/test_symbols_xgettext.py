@@ -24,7 +24,6 @@ REGEN_TEST_FIXTURES = os.getenv("SCANCODE_REGEN_TEST_FIXTURES", False)
 
 
 class TestXgettextSymbolScannerPlugin(FileBasedTesting):
-
     test_data_dir = os.path.join(os.path.dirname(__file__), "data/strings_xgettext")
 
     def test_is_xgettext_installed(self):
