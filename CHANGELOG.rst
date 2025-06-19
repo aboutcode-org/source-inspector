@@ -4,7 +4,7 @@ Changelog
 v0.6.1
 ------
 
-- Bump tree-sitter to v0.24 with python 3.13 support
+- Bump tree-sitter to v0.23.2 with python 3.13 support
 - Use released py-tree-sitter-swift from https://github.com/aboutcode-org/tree-sitter-swift
 - Add tests for source symbol extraction with tree-sitter in all supported languages
 
