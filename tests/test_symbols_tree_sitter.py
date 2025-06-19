@@ -101,3 +101,39 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
 
         expected_loc = self.get_test_loc("swift/Client.swift-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_go(self):
+        test_file = self.get_test_loc("go/client.go")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("go/client.go-expected.json")
+        check_json_scan(expected_loc, result_file, regen=True)
+
+    def test_symbols_strings_java(self):
+        test_file = self.get_test_loc("java/AssignmentsManager.java")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("java/AssignmentsManager.java-expected.json")
+        check_json_scan(expected_loc, result_file, regen=True)
+
+    def test_symbols_strings_python(self):
+        test_file = self.get_test_loc("python/cargo.py")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("python/cargo.py-expected.json")
+        check_json_scan(expected_loc, result_file, regen=True)
+
+    def test_symbols_strings_rust(self):
+        test_file = self.get_test_loc("rust/commit.rs")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("rust/commit.rs-expected.json")
+        check_json_scan(expected_loc, result_file, regen=True)
