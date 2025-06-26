@@ -1,6 +1,12 @@
 Changelog
 =========
 
+vNext
+-----
+
+- Add support for Cython
+- Add the function ``source_inspector.symbols_tree_sitter.get_tree_and_language_info``
+
 v0.6.1
 ------
 
