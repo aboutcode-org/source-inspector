@@ -109,7 +109,7 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("go/client.go-expected.json")
-        check_json_scan(expected_loc, result_file, regen=True)
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
     def test_symbols_strings_java(self):
         test_file = self.get_test_loc("java/AssignmentsManager.java")
@@ -118,7 +118,7 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("java/AssignmentsManager.java-expected.json")
-        check_json_scan(expected_loc, result_file, regen=True)
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
     def test_symbols_strings_python(self):
         test_file = self.get_test_loc("python/cargo.py")
@@ -127,7 +127,7 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("python/cargo.py-expected.json")
-        check_json_scan(expected_loc, result_file, regen=True)
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
     def test_symbols_strings_rust(self):
         test_file = self.get_test_loc("rust/commit.rs")
@@ -136,4 +136,13 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         run_scan_click(args)
 
         expected_loc = self.get_test_loc("rust/commit.rs-expected.json")
-        check_json_scan(expected_loc, result_file, regen=True)
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_cython(self):
+        test_file = self.get_test_loc("cython/intbitset.pyx")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cython/intbitset.pyx-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)

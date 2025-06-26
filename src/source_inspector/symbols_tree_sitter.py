@@ -89,12 +89,15 @@ def get_treesitter_symbols(location, **kwargs):
     )
 
 
-def collect_symbols_and_strings(location):
+def get_tree_and_language_info(location):
     """
-    Return lists containing mappings of symbols and strings collected from file at location.
-    """
-    symbols, strings = [], []
+    Given the `location` of a file, determine the correct parser to use, parse
+    the file, and return a tuple of (`tree`, `language_info`).
 
+    Return (None, None) if a parser is not found for the file type at `location`
+    """
+    tree = None
+    language_info = None
     if parser_result := get_parser(location):
         parser, language_info = parser_result
 
@@ -102,6 +105,18 @@ def collect_symbols_and_strings(location):
             source = f.read()
 
         tree = parser.parse(source)
+        return tree, language_info
+    return tree, language_info
+
+
+def collect_symbols_and_strings(location):
+    """
+    Return lists containing mappings of symbols and strings collected from file at location.
+    """
+    symbols, strings = [], []
+
+    tree, language_info = get_tree_and_language_info(location)
+    if tree and language_info:
         traverse(tree.root_node, symbols, strings, language_info)
 
     return symbols, strings
@@ -162,6 +177,11 @@ TS_LANGUAGE_WHEELS = {
     },
     "C#": {
         "wheel": "tree_sitter_c_sharp",
+        "identifiers": ["identifier"],
+        "string_literals": ["string_literal"],
+    },
+    "Cython": {
+        "wheel": "tree_sitter_python",
         "identifiers": ["identifier"],
         "string_literals": ["string_literal"],
     },
