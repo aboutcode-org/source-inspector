@@ -1,10 +1,10 @@
 Changelog
 =========
 
-vNext
------
+v0.7.0
+------
 
-- Add support for Cython
+- Add support for Cython https://github.com/aboutcode-org/source-inspector/pull/37
 - Add the function ``source_inspector.symbols_tree_sitter.get_tree_and_language_info``
 
 v0.6.1
