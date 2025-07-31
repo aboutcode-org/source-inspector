@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "ThreadBuffer.hpp",
+      "type": "file",
+      "source_symbols": [
+        "FrameBuffer",
+        "mutex",
+        "FrameBuffering",
+        "lock",
+        "mutex",
+        "push",
+        "FrameBuffering",
+        "frameCount",
+        "lock",
+        "mutex",
+        "lastestFrame",
+        "frameCount",
+        "lastestFrame",
+        "lock",
+        "mutex",
+        "lastestFrame",
+        "lastestFrame",
+        "lock",
+        "mutex"
+      ],
+      "source_strings": [],
+      "scan_errors": []
+    }
+  ]
+}
