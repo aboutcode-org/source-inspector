@@ -1,0 +1,48 @@
+{
+  "files": [
+    {
+      "path": "lock.hh",
+      "type": "file",
+      "source_symbols": [
+        "LOCK_HH",
+        "LOCK_HH",
+        "std",
+        "RCMutexImp",
+        "RCMutexImp",
+        "d_mutex",
+        "RCMutex",
+        "RCMutex",
+        "orig",
+        "d_imp",
+        "orig",
+        "d_imp",
+        "rhs",
+        "rhs",
+        "d_imp",
+        "d_imp",
+        "d_imp",
+        "d_imp",
+        "rhs",
+        "d_imp",
+        "RCMutex",
+        "d_imp",
+        "d_imp",
+        "d_imp",
+        "Lock",
+        "lock",
+        "lock",
+        "pthread_mutex_lock",
+        "d_lock",
+        "Lock",
+        "pthread_mutex_unlock",
+        "d_lock",
+        "pthread_mutex_unlock",
+        "d_lock",
+        "pthread_mutex_lock",
+        "d_lock"
+      ],
+      "source_strings": [],
+      "scan_errors": []
+    }
+  ]
+}

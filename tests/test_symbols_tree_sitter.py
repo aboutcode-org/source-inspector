@@ -48,6 +48,60 @@ class TestTreeSitterSymbolScannerPlugin(FileBasedTesting):
         expected_loc = self.get_test_loc("cpp/test3.cpp-expected.json")
         check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
 
+    def test_symbols_strings_cpp_hh(self):
+        test_file = self.get_test_loc("cpp/lock.hh")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cpp/lock.hh-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_cpp_cc(self):
+        test_file = self.get_test_loc("cpp/mt.cc")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cpp/mt.cc-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_cpp_cxx(self):
+        test_file = self.get_test_loc("cpp/thcs.cxx")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cpp/thcs.cxx-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_cpp_hpp(self):
+        test_file = self.get_test_loc("cpp/ThreadBuffer.hpp")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cpp/ThreadBuffer.hpp-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_cpp_hxx(self):
+        test_file = self.get_test_loc("cpp/tiff.hxx")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cpp/tiff.hxx-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
+    def test_symbols_strings_cpp_inl(self):
+        test_file = self.get_test_loc("cpp/rpc_task.inl")
+        result_file = self.get_temp_file("json")
+        args = ["--treesitter-symbol-and-string", test_file, "--json-pp", result_file]
+        run_scan_click(args)
+
+        expected_loc = self.get_test_loc("cpp/rpc_task.inl-expected.json")
+        check_json_scan(expected_loc, result_file, regen=REGEN_TEST_FIXTURES)
+
     def test_symbols_scanner_long_cli(self):
         test_file = self.get_test_loc("c/if_ath.c")
         result_file = self.get_temp_file("json")
