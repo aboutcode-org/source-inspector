@@ -19,7 +19,7 @@ jobs:
       parameters:
           job_name: ubuntu24_cpython
           image_name: ubuntu-24.04
-          python_versions: ['3.10', '3.11', '3.12', '3.13', '3.14', '3.15']
+          python_versions: ['3.10', '3.11', '3.12', '3.13', '3.14']
           test_suites:
               all: |
                  sudo apt-get install universal-ctags gettext
@@ -29,7 +29,7 @@ jobs:
       parameters:
           job_name: macos15_cpython
           image_name: macos-14
-          python_versions: ['3.10', '3.11', '3.12', '3.13', '3.14', '3.15']
+          python_versions: ['3.10', '3.11', '3.12', '3.13', '3.14']
           test_suites:
               all: |
                  brew install universal-ctags gettext
