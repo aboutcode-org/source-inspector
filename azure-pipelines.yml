@@ -27,7 +27,7 @@ jobs:
 
     - template: etc/ci/azure-posix.yml
       parameters:
-          job_name: ubuntu24_cpython
+          job_name: macos15_cpython
           image_name: macos-14
           python_versions: ['3.10', '3.11', '3.12', '3.13', '3.14', '3.15']
           test_suites:
