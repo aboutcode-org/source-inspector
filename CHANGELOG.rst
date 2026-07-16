@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.7.2
+------
+
+- Relax version constraints and update dependencies
+
+
 v0.7.1
 ------
 
